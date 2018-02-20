@@ -1,0 +1,3 @@
+rootProject.name = 'Zamlek'
+
+include ':app'
