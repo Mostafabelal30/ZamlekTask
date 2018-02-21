@@ -86664,7 +86664,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 51
+              lineNumber: 52
             }
           },
           _react3.default.createElement(
@@ -86673,7 +86673,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
               style: styles.header,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 52
+                lineNumber: 53
               }
             },
             _react3.default.createElement(
@@ -86686,7 +86686,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                 style: styles.backTouch,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 53
+                  lineNumber: 54
                 }
               },
               _react3.default.createElement(_reactNative.Image, {
@@ -86697,7 +86697,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                 style: styles.back,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 54
+                  lineNumber: 55
                 }
               })
             ),
@@ -86712,7 +86712,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                 style: styles.homeTouch,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 58
+                  lineNumber: 59
                 }
               },
               _react3.default.createElement(_reactNative.Image, {
@@ -86723,29 +86723,29 @@ __d(function (global, require, module, exports, _dependencyMap) {
                 style: styles.home,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 63
+                  lineNumber: 64
                 }
               })
             )
           ),
-          _react3.default.createElement(TextInput, {
+          _react3.default.createElement(_reactNative.TextInput, {
             style: styles.name,
             placeholder: "\u0639\u0646\u0648\u0627\u0646 \u0627\u0644\u0627\u0639\u0644\u0627\u0646",
             underlineColorAndroid: "transparent",
             placeholderTextColor: "gray",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 67
+              lineNumber: 68
             }
           }),
-          _react3.default.createElement(TextInput, {
+          _react3.default.createElement(_reactNative.TextInput, {
             style: styles.name,
             placeholder: " \u062A\u0641\u0627\u0635\u064A\u0644 \u0627\u0644\u0627\u0639\u0644\u0627\u0646",
             underlineColorAndroid: "transparent",
             placeholderTextColor: "gray",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 70
+              lineNumber: 71
             }
           })
         );
