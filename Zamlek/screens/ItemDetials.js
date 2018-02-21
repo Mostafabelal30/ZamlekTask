@@ -68,7 +68,6 @@ header: null
 <View style={{flex:1}}>
 <View style={styles.header}>
 <TouchableOpacity activeOpacity={.9} onPress={() => this.back()} style={styles.backTouch}>
-
 <Image  source={{uri: 'backicn'}} resizeMode='contain' style={styles.back} />
 </TouchableOpacity>
    <Text style={styles.destination}>{this.props.navigation.state.params.book.title}</Text>

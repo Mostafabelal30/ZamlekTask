@@ -45,8 +45,6 @@ export const Stack=StackNavigator({
     // FaqsAnswer:{screen:FaqsAnswer},
     // Thanks:{screen:Thanks},
     // Jobs:{screen:Jobs},
-
-
     // Tabs:{screen:Tabs},
     })
     export default class Zamlek extends Component {
