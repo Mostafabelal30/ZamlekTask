@@ -83,7 +83,9 @@ header: null
 
 const styles = StyleSheet.create({
     container:{
-        flex:1
+        flex:1,
+        width:deviceWidth,
+        alignItems:"center"
             },
             header:
             {
@@ -136,7 +138,7 @@ const styles = StyleSheet.create({
             },
             name:
             {
-                width:deviceWidth/1.1,
+                width:deviceWidth*.9,
                 height:deviceHight*.06,
                 alignItems: 'center',
                 padding:10,
