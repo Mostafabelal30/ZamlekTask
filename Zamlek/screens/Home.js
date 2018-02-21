@@ -18,7 +18,6 @@ import {
   AsyncStorage,
   Dimensions
 } from 'react-native';
-
 var deviceWidth = Dimensions.get('window').width;
 var deviceHight = Dimensions.get('window').height;
 import { NavigationActions } from "react-navigation";
