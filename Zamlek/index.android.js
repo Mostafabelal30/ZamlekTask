@@ -14,7 +14,7 @@ import Splash from './screens/Splash';
   import ItemDetials from './screens/ItemDetials';
  import Login from './screens/Login';
   import AddItem from './screens/AddItem';
-//  import Contact from './screens/contact';
+  import SignUp from './screens/SignUp';
 //  import VisaView from './screens/VisaView';
 //  import Tabs from './screens/Tabs';
 //  import Question from './screens/question';
@@ -28,6 +28,7 @@ import Splash from './screens/Splash';
  
 //  import Preparations from './screens/preparations';
 export const Stack=StackNavigator({
+  SignUp:{screen:SignUp},
   AddItem:{screen:AddItem},
 
   Splash:{screen:Splash},
@@ -38,7 +39,7 @@ export const Stack=StackNavigator({
     Home:{screen:Home},
     ItemDetials:{screen:ItemDetials},
    // Login:{screen:Login},
-    // Langauge:{screen:Langauge},
+   SignUp:{screen:SignUp},
     // Result:{screen:Result},
     // VisaView:{screen:VisaView},
     // Contact:{screen:Contact},

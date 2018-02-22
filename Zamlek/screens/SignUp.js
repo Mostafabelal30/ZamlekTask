@@ -25,15 +25,13 @@ import { debounce } from 'lodash';
 export default class Splash extends Component {
     constructor(props) {
         super(props); 
-       this.Login = this.Login.bind(this);
+       this.SignUp = this.SignUp.bind(this);
        this.gohome = this.gohome.bind(this);
 
 this.state={
    
      email:'',
      password:'',
-     sureEmail:'',
-     surePassword:''
 
     
   }
@@ -44,35 +42,14 @@ this.state={
 header: null
   };
 
-  componentDidMount() {
+ 
+  
 
-  AsyncStorage.getItem("email").then((value) => {
-    if(value==null)
-    {
-     // this.setState({checkListOption:""})
-    }
-    else{
-    //alert(value)
-    this.setState({sureEmail:JSON.parse(value)})
-    }
-  }).done();
-
-  AsyncStorage.getItem("password").then((value) => {
-    if(value==null)
-    {
-     // this.setState({checkListOption:""})
-    }
-    else{
-    //alert(value)
-    this.setState({surePassword:JSON.parse(value)})
-    }
-  }).done();
-  }
 
  fillFields()
  {
   this.popup.confirm({
-    content: [<Text style={{fontSize:deviceWidth*.04,padding:50}}>please enter correct emaill and password</Text>],
+    content: [<Text style={{fontSize:deviceWidth*.04,padding:50}}>يرجى ملء هذه الحقول</Text>],
     ok: {
 
       text: "OK",
@@ -86,22 +63,48 @@ header: null
   });
  }
 
- Login()
- {
-   if(this.state.email!==this.state.sureEmail||this.state.password!==this.state.surePassword)
+ SignUp()
+ { 
+      let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/ ;
+
+   if(this.state.email===""||this.state.password==="")
    {
      this.fillFields()
    }
    else{
+    if(reg.test(this.state.email)===false)
+    {
+      this.formatEmail()
 
+    }    else{
 
       //alert(responseData)
-  
-      this.props.navigation.navigate('AddItem')
+      AsyncStorage.setItem('email',JSON.stringify(this.state.email))
+      AsyncStorage.setItem('password',JSON.stringify(this.state.password))
+
+      this.props.navigation.navigate('Login')
   
     
    }
+   }
+ }
 
+
+ formatEmail()
+ {
+  this.popup.confirm({
+    content: [<Text style={{fontSize:deviceWidth*.04,padding:50}}>من فضلك ادخل الايميل بشكل صحيح</Text>],
+    ok: {
+
+      text:   "OK",
+      style: {
+        color: '#006767',
+        fontSize:deviceWidth*.04
+      },
+     
+     },
+ 
+  });
  }
 
  gohome()
@@ -155,11 +158,11 @@ header: null
      
      value={this.state.message}
      /> */}
-    <TouchableOpacity activeOpacity={.9} onPress={debounce(this.Login, 1000, {
+    <TouchableOpacity activeOpacity={.9} onPress={debounce(this.SignUp, 1000, {
         leading: true,
         trailing: false
       })}  style={styles.Eligibility}>
-        <Text style={styles.check}>دخول</Text>
+        <Text style={styles.check}>SignUp</Text>
      </TouchableOpacity>
 
        <TouchableOpacity activeOpacity={.9} onPress={debounce(this.gohome, 1000, {

@@ -1439,6 +1439,10 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   var _AddItem2 = _interopRequireDefault(_AddItem);
 
+  var _SignUp = require(_dependencyMap[9], "./screens/SignUp");
+
+  var _SignUp2 = _interopRequireDefault(_SignUp);
+
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1467,6 +1471,9 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   var Stack = exports.Stack = (0, _reactNavigation.StackNavigator)({
+    SignUp: {
+      screen: _SignUp2.default
+    },
     AddItem: {
       screen: _AddItem2.default
     },
@@ -1481,6 +1488,9 @@ __d(function (global, require, module, exports, _dependencyMap) {
     },
     ItemDetials: {
       screen: _ItemDetials2.default
+    },
+    SignUp: {
+      screen: _SignUp2.default
     }
   });
 
@@ -1501,7 +1511,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
           navigation: navigation,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 60
+            lineNumber: 61
           }
         });
       }
@@ -1515,7 +1525,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   _reactNative.AppRegistry.registerComponent('Zamlek', function () {
     return Zamlek;
   });
-},595,[12,22,176,489,558,585,586,588,591],"Zamlek/index.android.js");
+},11,[12,22,176,487,554,581,582,584,586,590],"Zamlek/index.android.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -6906,7 +6916,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   };
   module.exports = ReactNative;
-},176,[18,596,277,329,335,607,608,609,394,605,407,409,410,411,396,610,413,612,436,613,601,615,611,376,440,616,443,617,445,401,446,447,451,618,336,455,600,620,337,424,604,345,389,304,621,402,622,466,245,246,346,467,261,473,474,623,475,476,624,286,285,371,184,433,478,354,380,381,479,230,480,449,249,284,481,625,483,626,283,182,627,603,269,486,628,431,231,253,178,597,258,318,488,278,307,377,306],"react-native-implementation");
+},176,[18,177,276,328,334,390,391,392,394,376,407,409,410,411,396,412,414,435,436,437,280,439,433,378,440,442,443,444,445,401,393,446,450,452,335,454,258,461,336,425,343,347,344,324,462,402,463,464,245,246,348,465,260,471,472,470,473,474,475,319,318,373,184,434,476,356,382,383,477,230,478,448,249,317,479,480,481,482,322,182,483,340,268,484,485,432,231,253,178,215,306,299,486,277,286,379,285],"react-native-implementation");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -6947,7 +6957,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = AccessibilityInfo;
-},596,[178,231],"AccessibilityInfo");
+},177,[178,231],"AccessibilityInfo");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -7491,7 +7501,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = MessageQueue;
-},180,[181,182,273,18,202,214],"MessageQueue");
+},180,[181,182,272,18,202,214],"MessageQueue");
 __d(function (global, require, module, exports, _dependencyMap) {
   module.exports = global.ErrorUtils;
 },181,[],"ErrorUtils");
@@ -7719,7 +7729,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = Systrace;
-},182,[18,183,276],"Systrace");
+},182,[18,183,275],"Systrace");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -7740,7 +7750,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = ReactNative;
-},184,[185,275],"ReactNative");
+},184,[185,274],"ReactNative");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -16444,7 +16454,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       module.exports = reactNativeRenderer;
     })();
   }
-},185,[186,18,19,16,268,269,12,194,270,271,263,15,20,272,273,274],"ReactNativeRenderer-dev");
+},185,[186,18,19,16,267,268,12,194,269,270,262,15,20,271,272,273],"ReactNativeRenderer-dev");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -16674,7 +16684,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       JSInspector.registerAgent(require(_dependencyMap[30], 'NetworkAgent'));
     }
   }
-},186,[187,188,189,193,182,194,181,203,205,213,214,219,235,200,236,237,244,245,247,179,250,251,252,231,253,254,178,256,260,265,266],"InitializeCore");
+},186,[187,188,189,193,182,194,181,203,205,213,214,219,235,200,236,237,244,245,247,179,250,251,252,231,253,254,178,256,259,264,265],"InitializeCore");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -20048,7 +20058,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   } else {
     module.exports = JSTimers;
   }
-},214,[597,182,18,178,216,195,19],"JSTimers");
+},214,[215,182,18,178,216,195,19],"JSTimers");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -20072,7 +20082,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = Platform;
-},597,[178],"Platform");
+},215,[178],"Platform");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -20611,7 +20621,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   XMLHttpRequest.DONE = DONE;
   XMLHttpRequest._interceptor = null;
   module.exports = XMLHttpRequest;
-},219,[220,598,234,18,19],"XMLHttpRequest");
+},219,[220,224,234,18,19],"XMLHttpRequest");
 __d(function (global, require, module, exports, _dependencyMap) {
     "use strict";
 
@@ -21088,7 +21098,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = RCTNetworking;
-},598,[225,230,178,232],"RCTNetworking");
+},224,[225,230,178,232],"RCTNetworking");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -21460,7 +21470,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(EventEmitter);
 
   module.exports = NativeEventEmitter;
-},230,[228,597,231,18],"NativeEventEmitter");
+},230,[228,215,231,18],"NativeEventEmitter");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -22032,7 +22042,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   WebSocket.CLOSED = CLOSED;
   WebSocket.isAvailable = !!WebSocketModule;
   module.exports = WebSocket;
-},236,[237,220,230,178,597,243,234,233,18],"WebSocket");
+},236,[237,220,230,178,215,243,234,233,18],"WebSocket");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -22436,7 +22446,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = Alert;
-},245,[246,178,597],"Alert");
+},245,[246,178,215],"Alert");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -22657,7 +22667,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = Geolocation;
-},247,[230,178,18,248,19,597,249],"Geolocation");
+},247,[230,178,18,248,19,215,249],"Geolocation");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -23164,7 +23174,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = HMRClient;
-},256,[597,18,236,599,178],"HMRClient");
+},256,[215,18,236,257,178],"HMRClient");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -23203,7 +23213,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = HMRLoadingView;
-},599,[600],"HMRLoadingView");
+},257,[258],"HMRLoadingView");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -23226,7 +23236,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = ToastAndroid;
-},600,[178],"ToastAndroid");
+},258,[178],"ToastAndroid");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -23262,7 +23272,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   module.exports = {
     register: register
   };
-},260,[261,236,262,199,263],"setupDevtools");
+},259,[260,236,261,199,262],"setupDevtools");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -23383,7 +23393,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = AppState;
-},261,[225,230,178,248,18],"AppState");
+},260,[225,230,178,248,18],"AppState");
 __d(function (global, require, module, exports, _dependencyMap) {
     var _extends2 = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -26409,7 +26419,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
             module.exports = MultiOverlay;
         }]);
     });
-},262,[],"react-devtools-core/build/backend.js");
+},261,[],"react-devtools-core/build/backend.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -26456,7 +26466,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = flattenStyle;
-},263,[18,264],"flattenStyle");
+},262,[18,263],"flattenStyle");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -26464,7 +26474,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = _require.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 
   module.exports = __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactNativePropRegistry;
-},264,[184],"ReactNativePropRegistry");
+},263,[184],"ReactNativePropRegistry");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -26479,7 +26489,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = JSInspector;
-},265,[],"JSInspector");
+},264,[],"JSInspector");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -26666,7 +26676,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   NetworkAgent.DOMAIN = 'Network';
   module.exports = NetworkAgent;
-},266,[267,265,189,219],"NetworkAgent");
+},265,[266,264,189,219],"NetworkAgent");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -26692,7 +26702,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = InspectorAgent;
-},267,[],"InspectorAgent");
+},266,[],"InspectorAgent");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -26704,7 +26714,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = RCTEventEmitter;
-},268,[179],"RCTEventEmitter");
+},267,[179],"RCTEventEmitter");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -26771,7 +26781,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = UIManager;
-},269,[178,597,187,18],"UIManager");
+},268,[178,215,187,18],"UIManager");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -26808,7 +26818,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = TextInputState;
-},270,[597,269],"TextInputState");
+},269,[215,268],"TextInputState");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -26863,7 +26873,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = deepDiffer;
-},271,[],"deepDiffer");
+},270,[],"deepDiffer");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -26903,7 +26913,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = shallowEqual;
-},272,[],"fbjs/lib/shallowEqual.js");
+},271,[],"fbjs/lib/shallowEqual.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -26947,7 +26957,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = deepFreezeAndThrowOnMutationInDev;
-},273,[],"deepFreezeAndThrowOnMutationInDev");
+},272,[],"deepFreezeAndThrowOnMutationInDev");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -26955,7 +26965,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     debugRenderPhaseSideEffects: false
   };
   module.exports = ReactFeatureFlags;
-},274,[],"ReactFeatureFlags");
+},273,[],"ReactFeatureFlags");
 __d(function (global, require, module, exports, _dependencyMap) {
   "use strict";
 
@@ -30823,7 +30833,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }),
       ReactNativeRenderer$3 = ReactNativeRenderer$2 && ReactNativeRenderer || ReactNativeRenderer$2;
   module.exports = ReactNativeRenderer$3["default"] ? ReactNativeRenderer$3["default"] : ReactNativeRenderer$3;
-},275,[186,18,16,268,269,12,194,270,271,263,15,272,274],"ReactNativeRenderer-prod");
+},274,[186,18,16,267,268,12,194,269,270,262,15,271,273],"ReactNativeRenderer-prod");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -30831,7 +30841,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = _require.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 
   module.exports = __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactDebugTool;
-},276,[184],"ReactDebugTool");
+},275,[184],"ReactDebugTool");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -30960,7 +30970,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = ActivityIndicator;
-},277,[278,279,597,601,292,282,283,304,306,316,318],"ActivityIndicator");
+},276,[277,279,215,280,281,284,322,324,285,326,299],"ActivityIndicator");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -30989,7 +30999,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   var ColorPropType = colorPropType.bind(null, false);
   ColorPropType.isRequired = colorPropType.bind(null, true);
   module.exports = ColorPropType;
-},278,[259],"ColorPropType");
+},277,[278],"ColorPropType");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -31298,7 +31308,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     yellowgreen: 0x9acd32ff
   };
   module.exports = normalizeColor;
-},259,[],"normalizeColor");
+},278,[],"normalizeColor");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -31397,7 +31407,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = ProgressBarAndroid;
-},601,[278,292,282,184,306,318],"ProgressBarAndroid");
+},280,[277,281,284,184,285,299],"ProgressBarAndroid");
 __d(function (global, require, module, exports, _dependencyMap) {
   if (process.env.NODE_ENV !== 'production') {
     var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && (typeof Symbol === "function" ? Symbol.for : "@@for") && (typeof Symbol === "function" ? Symbol.for : "@@for")('react.element') || 0xeac7;
@@ -31411,7 +31421,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   } else {
     module.exports = require(_dependencyMap[1], './factoryWithThrowingShims')();
   }
-},292,[293,294],"prop-types/index.js");
+},281,[282,283],"prop-types/index.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -31883,7 +31893,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     ReactPropTypes.PropTypes = ReactPropTypes;
     return ReactPropTypes;
   };
-},293,[16,18,19,14,21,20],"prop-types/factoryWithTypeCheckers.js");
+},282,[16,18,19,14,21,20],"prop-types/factoryWithTypeCheckers.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -31933,12 +31943,12 @@ __d(function (global, require, module, exports, _dependencyMap) {
     ReactPropTypes.PropTypes = ReactPropTypes;
     return ReactPropTypes;
   };
-},294,[16,18,21],"prop-types/factoryWithThrowingShims.js");
+},283,[16,18,21],"prop-types/factoryWithThrowingShims.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
   module.exports = require(_dependencyMap[0], 'react');
-},282,[12],"React");
+},284,[12],"React");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -31993,7 +32003,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     collapsable: PropTypes.bool,
     needsOffscreenAlphaCompositing: PropTypes.bool
   });
-},306,[307,602,292,314,299,315],"ViewPropTypes");
+},285,[286,291,281,292,293,298],"ViewPropTypes");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32008,7 +32018,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     right: PropTypes.number
   });
   module.exports = EdgeInsetsPropType;
-},307,[292,308],"EdgeInsetsPropType");
+},286,[281,287],"EdgeInsetsPropType");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32068,7 +32078,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = createStrictShapeTypeChecker;
-},308,[18,309],"createStrictShapeTypeChecker");
+},287,[18,288],"createStrictShapeTypeChecker");
 __d(function (global, require, module, exports, _dependencyMap) {
   "use strict";
 
@@ -32082,7 +32092,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = merge;
-},309,[310],"merge");
+},288,[289],"merge");
 __d(function (global, require, module, exports, _dependencyMap) {
   "use strict";
 
@@ -32108,7 +32118,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = mergeInto;
-},310,[311],"mergeInto");
+},289,[290],"mergeInto");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32152,10 +32162,10 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = mergeHelpers;
-},311,[18],"mergeHelpers");
+},290,[18],"mergeHelpers");
 __d(function (global, require, module, exports, _dependencyMap) {
   module.export = {};
-},602,[],"PlatformViewPropTypes");
+},291,[],"PlatformViewPropTypes");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32182,7 +32192,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = StyleSheetPropType;
-},314,[308,263],"StyleSheetPropType");
+},292,[287,262],"StyleSheetPropType");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32228,7 +32238,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   });
 
   module.exports = ViewStylePropTypes;
-},299,[278,291,292,295,296],"ViewStylePropTypes");
+},293,[277,294,281,295,296],"ViewStylePropTypes");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32290,7 +32300,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     direction: ReactPropTypes.oneOf(['inherit', 'ltr', 'rtl'])
   };
   module.exports = LayoutPropTypes;
-},291,[292],"LayoutPropTypes");
+},294,[281],"LayoutPropTypes");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32308,7 +32318,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     shadowRadius: ReactPropTypes.number
   };
   module.exports = ShadowPropTypesIOS;
-},295,[278,292],"ShadowPropTypesIOS");
+},295,[277,281],"ShadowPropTypesIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32363,7 +32373,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     translateY: deprecatedPropType(ReactPropTypes.number, 'Use the transform prop instead.')
   };
   module.exports = TransformPropTypes;
-},296,[292,297],"TransformPropTypes");
+},296,[281,297],"TransformPropTypes");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32384,7 +32394,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = deprecatedPropType;
-},297,[269],"deprecatedPropType");
+},297,[268],"deprecatedPropType");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32392,7 +32402,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     AccessibilityTraits: ['none', 'button', 'link', 'header', 'search', 'image', 'selected', 'plays', 'key', 'text', 'summary', 'disabled', 'frequentUpdates', 'startsMedia', 'adjustable', 'allowsDirectInteraction', 'pageTurn'],
     AccessibilityComponentTypes: ['none', 'button', 'radiobutton_checked', 'radiobutton_unchecked']
   };
-},315,[],"ViewAccessibility");
+},298,[],"ViewAccessibility");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32559,7 +32569,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     ColorArray: processColorArray
   };
   module.exports = requireNativeComponent;
-},318,[597,319,287,269,320,321,322,323,258,324,302,328,18,19],"requireNativeComponent");
+},299,[215,300,301,268,310,311,312,313,306,314,309,321,18,19],"requireNativeComponent");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32567,7 +32577,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = _require.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 
   module.exports = __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactNativeBridgeEventPlugin;
-},319,[184],"ReactNativeBridgeEventPlugin");
+},300,[184],"ReactNativeBridgeEventPlugin");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32613,7 +32623,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   ReactNativeStyleAttributes.textShadowColor = colorAttributes;
   ReactNativeStyleAttributes.overlayColor = colorAttributes;
   module.exports = ReactNativeStyleAttributes;
-},287,[288,298,299,290,258,300,302],"ReactNativeStyleAttributes");
+},301,[302,305,293,304,306,307,309],"ReactNativeStyleAttributes");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32649,7 +32659,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   });
 
   module.exports = ImageStylePropTypes;
-},288,[278,289,291,292,295,296],"ImageStylePropTypes");
+},302,[277,303,294,281,295,296],"ImageStylePropTypes");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32663,7 +32673,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     repeat: null
   });
   module.exports = ImageResizeMode;
-},289,[290],"ImageResizeMode");
+},303,[304],"ImageResizeMode");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32686,7 +32696,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = keyMirror;
-},290,[18],"fbjs/lib/keyMirror.js");
+},304,[18],"fbjs/lib/keyMirror.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32723,7 +32733,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   });
 
   module.exports = TextStylePropTypes;
-},298,[278,292,299],"TextStylePropTypes");
+},305,[277,281,293],"TextStylePropTypes");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32752,7 +32762,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = processColor;
-},258,[597,259],"processColor");
+},306,[215,278],"processColor");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -32920,7 +32930,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = processTransform;
-},300,[301,597,18,202],"processTransform");
+},307,[308,215,18,202],"processTransform");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33309,7 +33319,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = MatrixMath;
-},301,[18],"MatrixMath");
+},308,[18],"MatrixMath");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33325,7 +33335,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = sizesDiffer;
-},302,[],"sizesDiffer");
+},309,[],"sizesDiffer");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33333,7 +33343,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = _require.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 
   module.exports = __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.createReactNativeComponentClass;
-},320,[184],"createReactNativeComponentClass");
+},310,[184],"createReactNativeComponentClass");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33351,7 +33361,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = insetsDiffer;
-},321,[],"insetsDiffer");
+},311,[],"insetsDiffer");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33364,7 +33374,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = matricesDiffer;
-},322,[],"matricesDiffer");
+},312,[],"matricesDiffer");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33380,7 +33390,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = pointsDiffer;
-},323,[],"pointsDiffer");
+},313,[],"pointsDiffer");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33461,7 +33471,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   module.exports = resolveAssetSource;
   module.exports.pickScale = AssetSourceResolver.pickScale;
   module.exports.setCustomSourceTransformer = setCustomSourceTransformer;
-},324,[325,326,178],"resolveAssetSource");
+},314,[315,316,178],"resolveAssetSource");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33479,7 +33489,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     registerAsset: registerAsset,
     getAssetByID: getAssetByID
   };
-},325,[],"AssetRegistry");
+},315,[],"AssetRegistry");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33598,7 +33608,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = AssetSourceResolver;
-},326,[284,597,327,18],"AssetSourceResolver");
+},316,[317,215,320,18],"AssetSourceResolver");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33643,7 +33653,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = PixelRatio;
-},284,[285],"PixelRatio");
+},317,[318],"PixelRatio");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33740,7 +33750,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     Dimensions.set(update);
   });
   module.exports = Dimensions;
-},285,[286,228,597,231,18],"Dimensions");
+},318,[319,228,215,231,18],"Dimensions");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33750,7 +33760,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   invariant(DeviceInfo, 'DeviceInfo native module is not installed correctly');
   module.exports = DeviceInfo;
-},286,[178,18],"DeviceInfo");
+},319,[178,18],"DeviceInfo");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33816,7 +33826,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     getAndroidResourceIdentifier: getAndroidResourceIdentifier,
     getBasePath: getBasePath
   };
-},327,[],"react-native/local-cli/bundle/assetPathUtils.js");
+},320,[],"react-native/local-cli/bundle/assetPathUtils.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33853,7 +33863,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = verifyPropTypes;
-},328,[287],"verifyPropTypes");
+},321,[301],"verifyPropTypes");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -33926,7 +33936,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       return result;
     }
   };
-},283,[284,264,287,303,263],"StyleSheet");
+},322,[317,263,301,323,262],"StyleSheet");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -34000,7 +34010,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   StyleSheetValidation.addValidStylePropTypes(TextStylePropTypes);
   StyleSheetValidation.addValidStylePropTypes(ViewStylePropTypes);
   module.exports = StyleSheetValidation;
-},303,[288,298,299,18],"StyleSheetValidation");
+},323,[302,305,293,18],"StyleSheetValidation");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -34077,7 +34087,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = ViewToExport;
-},304,[279,597,292,282,287,305,306,316,18,318,269],"View");
+},324,[279,215,281,284,301,325,285,326,18,299,268],"View");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -34111,7 +34121,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     removeClippedSubviews: true
   });
   module.exports = ReactNativeViewAttributes;
-},305,[287],"ReactNativeViewAttributes");
+},325,[301],"ReactNativeViewAttributes");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -34125,7 +34135,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   var ReactNoopUpdateQueue = new React.Component().updater;
   module.exports = factory(React.Component, React.isValidElement, ReactNoopUpdateQueue);
-},316,[12,317],"create-react-class/index.js");
+},326,[12,327],"create-react-class/index.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -34541,7 +34551,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = factory;
-},317,[14,15,18,19],"create-react-class/factory.js");
+},327,[14,15,18,19],"create-react-class/factory.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -35244,7 +35254,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     Text: Text
   };
   module.exports = ReactART;
-},329,[12,22,330,331,334,282,292,305,320,309,18],"ReactNativeART");
+},328,[12,22,329,330,333,284,281,325,310,288,18],"ReactNativeART");
 __d(function (global, require, module, exports, _dependencyMap) {
 	var colors = {
 		maroon: '#800000',
@@ -35508,7 +35518,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 	};
 
 	module.exports = Color;
-},330,[],"art/core/color.js");
+},329,[],"art/core/color.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -35563,7 +35573,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = SerializablePath;
-},331,[332,333],"ARTSerializablePath");
+},330,[331,332],"ARTSerializablePath");
 __d(function (global, require, module, exports, _dependencyMap) {
 	module.exports = function (mixins) {
 		var proto = {};
@@ -35586,7 +35596,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 		proto.constructor.prototype = proto.initialize.prototype = proto;
 		return proto.constructor;
 	};
-},332,[],"art/core/class.js");
+},331,[],"art/core/class.js");
 __d(function (global, require, module, exports, _dependencyMap) {
 	var Class = require(_dependencyMap[0], './class');
 
@@ -35927,7 +35937,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 			this.onLine(sx, sy, ex, ey);
 		}
 	});
-},333,[332],"art/core/path.js");
+},332,[331],"art/core/path.js");
 __d(function (global, require, module, exports, _dependencyMap) {
 	var Class = require(_dependencyMap[0], './class');
 
@@ -36056,7 +36066,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 			};
 		}
 	});
-},334,[332],"art/core/transform.js");
+},333,[331],"art/core/transform.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -36259,7 +36269,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     })
   });
   module.exports = Button;
-},335,[12,22,278,597,282,292,283,336,604,345,304,18],"Button");
+},334,[12,22,277,215,284,281,322,335,343,347,324,18],"Button");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -36509,7 +36519,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = Text;
-},336,[278,307,279,597,282,292,305,314,298,337,316,320,343,258],"Text");
+},335,[277,286,279,215,284,281,325,292,305,336,326,310,342,306],"Text");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -36977,7 +36987,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = Touchable;
-},337,[338,597,340,282,184,603,342,269,304,290,259],"Touchable");
+},336,[337,215,339,284,184,340,341,268,324,304,278],"Touchable");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -37001,7 +37011,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   PooledClass.addPoolingTo(BoundingDimensions, twoArgumentPooler);
   module.exports = BoundingDimensions;
-},338,[339],"BoundingDimensions");
+},337,[338],"BoundingDimensions");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -37089,7 +37099,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     fourArgumentPooler: fourArgumentPooler
   };
   module.exports = PooledClass;
-},339,[18],"PooledClass");
+},338,[18],"PooledClass");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -37109,7 +37119,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   PooledClass.addPoolingTo(Position, twoArgumentPooler);
   module.exports = Position;
-},340,[339],"Position");
+},339,[338],"Position");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -37120,7 +37130,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   TVEventHandler.prototype.disable = function () {};
 
   module.exports = TVEventHandler;
-},603,[],"TVEventHandler");
+},340,[],"TVEventHandler");
 __d(function (global, require, module, exports, _dependencyMap) {
   "use strict";
 
@@ -37134,7 +37144,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = TouchEventUtils;
-},342,[],"fbjs/lib/TouchEventUtils.js");
+},341,[],"fbjs/lib/TouchEventUtils.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -37153,7 +37163,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = mergeFast;
-},343,[],"mergeFast");
+},342,[],"mergeFast");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -37315,7 +37325,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = TouchableNativeFeedback;
-},604,[597,282,292,184,337,389,269,316,390,258],"TouchableNativeFeedback");
+},343,[215,284,281,184,336,344,268,326,346,306],"TouchableNativeFeedback");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -37437,7 +37447,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = TouchableWithoutFeedback;
-},389,[307,282,292,388,337,316,390,19,315],"TouchableWithoutFeedback");
+},344,[286,284,281,345,336,326,346,19,298],"TouchableWithoutFeedback");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -37528,7 +37538,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     cancelAnimationFrame: _cancelAnimationFrame
   };
   module.exports = TimerMixin;
-},388,[],"react-timer-mixin/TimerMixin.js");
+},345,[],"react-timer-mixin/TimerMixin.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -37539,7 +37549,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = ensurePositiveDelayProps;
-},390,[18],"ensurePositiveDelayProps");
+},346,[18],"ensurePositiveDelayProps");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -37690,7 +37700,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = TouchableOpacity;
-},345,[346,371,279,282,292,388,337,389,316,390,263],"TouchableOpacity");
+},347,[348,373,279,284,281,345,336,344,326,346,262],"TouchableOpacity");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -37723,7 +37733,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   _extends(Animated, AnimatedImplementation);
 
   module.exports = Animated;
-},346,[347,605,336,304,376],"Animated");
+},348,[349,376,335,324,378],"Animated");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -38191,7 +38201,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     unforkEvent: unforkEvent,
     __PropsOnlyForTests: AnimatedProps
   };
-},347,[348,356,357,358,350,359,360,351,361,364,349,365,366,368,370,373],"AnimatedImplementation");
+},349,[350,358,359,360,352,361,362,353,363,366,351,367,368,370,372,375],"AnimatedImplementation");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -38361,7 +38371,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     AnimatedEvent: AnimatedEvent,
     attachNativeEvent: attachNativeEvent
   };
-},348,[349,352,184,18],"AnimatedEvent");
+},350,[351,354,184,18],"AnimatedEvent");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -38632,7 +38642,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(AnimatedWithChildren);
 
   module.exports = AnimatedValue;
-},349,[350,351,353,354,352],"AnimatedValue");
+},351,[352,353,355,356,354],"AnimatedValue");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -38917,7 +38927,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   AnimatedInterpolation.__createInterpolation = createInterpolation;
   module.exports = AnimatedInterpolation;
-},350,[351,353,352,18,259],"AnimatedInterpolation");
+},352,[353,355,354,18,278],"AnimatedInterpolation");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -39001,7 +39011,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = AnimatedNode;
-},351,[352,18],"AnimatedNode");
+},353,[354,18],"AnimatedNode");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -39194,7 +39204,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
 
   };
-},352,[178,230,18],"NativeAnimatedHelper");
+},354,[178,230,18],"NativeAnimatedHelper");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -39294,7 +39304,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(AnimatedNode);
 
   module.exports = AnimatedWithChildren;
-},353,[351,352],"AnimatedWithChildren");
+},355,[353,354],"AnimatedWithChildren");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -39441,7 +39451,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = InteractionManager;
-},354,[179,228,193,355,255,18,290],"InteractionManager");
+},356,[179,228,193,357,255,18,304],"InteractionManager");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -39580,7 +39590,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = TaskQueue;
-},355,[255,18],"TaskQueue");
+},357,[255,18],"TaskQueue");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -39664,7 +39674,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(AnimatedWithChildren);
 
   module.exports = AnimatedAddition;
-},356,[350,351,349,353],"AnimatedAddition");
+},358,[352,353,351,355],"AnimatedAddition");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -39749,7 +39759,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(AnimatedWithChildren);
 
   module.exports = AnimatedDiffClamp;
-},357,[350,351,353],"AnimatedDiffClamp");
+},359,[352,353,355],"AnimatedDiffClamp");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -39841,7 +39851,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(AnimatedWithChildren);
 
   module.exports = AnimatedDivision;
-},358,[350,351,349,353],"AnimatedDivision");
+},360,[352,353,351,355],"AnimatedDivision");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -39918,7 +39928,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(AnimatedWithChildren);
 
   module.exports = AnimatedModulo;
-},359,[350,351,353],"AnimatedModulo");
+},361,[352,353,355],"AnimatedModulo");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -40002,7 +40012,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(AnimatedWithChildren);
 
   module.exports = AnimatedMultiplication;
-},360,[350,351,349,353],"AnimatedMultiplication");
+},362,[352,353,351,355],"AnimatedMultiplication");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -40194,7 +40204,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(AnimatedNode);
 
   module.exports = AnimatedProps;
-},361,[348,351,362,352,184,18],"AnimatedProps");
+},363,[350,353,364,354,184,18],"AnimatedProps");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -40348,7 +40358,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(AnimatedWithChildren);
 
   module.exports = AnimatedStyle;
-},362,[351,363,353,352,263],"AnimatedStyle");
+},364,[353,365,355,354,262],"AnimatedStyle");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -40502,7 +40512,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(AnimatedWithChildren);
 
   module.exports = AnimatedTransform;
-},363,[351,353,352],"AnimatedTransform");
+},365,[353,355,354],"AnimatedTransform");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -40571,7 +40581,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(AnimatedNode);
 
   module.exports = AnimatedTracking;
-},364,[349,351],"AnimatedTracking");
+},366,[351,353],"AnimatedTracking");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -40718,7 +40728,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(AnimatedWithChildren);
 
   module.exports = AnimatedValueXY;
-},365,[349,353,18],"AnimatedValueXY");
+},367,[351,355,18],"AnimatedValueXY");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -40819,7 +40829,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(Animation);
 
   module.exports = DecayAnimation;
-},366,[367,352],"DecayAnimation");
+},368,[369,354],"DecayAnimation");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -40870,7 +40880,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = Animation;
-},367,[352],"Animation");
+},369,[354],"Animation");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -41108,7 +41118,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(Animation);
 
   module.exports = SpringAnimation;
-},368,[349,365,367,369,18,352],"SpringAnimation");
+},370,[351,367,369,371,18,354],"SpringAnimation");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -41181,7 +41191,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     fromOrigamiTensionAndFriction: fromOrigamiTensionAndFriction,
     fromBouncinessAndSpeed: fromBouncinessAndSpeed
   };
-},369,[],"SpringConfig");
+},371,[],"SpringConfig");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -41330,7 +41340,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(Animation);
 
   module.exports = TimingAnimation;
-},370,[349,365,367,352,371],"TimingAnimation");
+},372,[351,367,369,354,373],"TimingAnimation");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -41477,7 +41487,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = Easing;
-},371,[372],"Easing");
+},373,[374],"Easing");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -41595,7 +41605,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       return calcBezier(getTForX(x), mY1, mY2);
     };
   };
-},372,[],"bezier");
+},374,[],"bezier");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -41815,7 +41825,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = createAnimatedComponent;
-},373,[12,22,348,361,282,299],"createAnimatedComponent");
+},375,[12,22,350,363,284,293],"createAnimatedComponent");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -42037,7 +42047,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   var RKImage = requireNativeComponent('RCTImageView', Image, cfg);
   var RCTTextInlineImage = requireNativeComponent('RCTTextInlineImage', Image, cfg);
   module.exports = Image;
-},605,[289,288,279,178,282,292,305,193,283,314,304,306,299,316,606,263,309,318,324],"Image");
+},376,[303,302,279,178,284,281,325,193,322,292,324,285,293,326,377,262,288,299,314],"Image");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -42060,7 +42070,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = filterObject;
-},606,[],"fbjs/lib/filterObject.js");
+},377,[],"fbjs/lib/filterObject.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -42533,7 +42543,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = ScrollView;
-},376,[346,278,307,597,377,292,282,184,378,386,283,314,304,306,299,316,382,263,18,387,318,19],"ScrollView");
+},378,[348,277,286,215,379,281,284,184,380,388,322,292,324,285,293,326,384,262,18,389,299,19],"ScrollView");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -42546,7 +42556,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     y: PropTypes.number
   });
   module.exports = PointPropType;
-},377,[292,308],"PointPropType");
+},379,[281,287],"PointPropType");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -42791,7 +42801,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     Mixin: ScrollResponderMixin
   };
   module.exports = ScrollResponder;
-},378,[285,379,380,184,383,270,269,18,384,216,19,178,385],"ScrollResponder");
+},380,[318,381,382,184,385,269,268,18,386,216,19,178,387],"ScrollResponder");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -42818,7 +42828,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = FrameRateLogger;
-},379,[178,18],"FrameRateLogger");
+},381,[178,18],"FrameRateLogger");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -42869,7 +42879,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = Keyboard;
-},380,[381,18,230,178,382],"Keyboard");
+},382,[383,18,230,178,384],"Keyboard");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -42973,7 +42983,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     spring: configureNext.bind(null, Presets.spring)
   };
   module.exports = LayoutAnimation;
-},381,[292,269,290],"LayoutAnimation");
+},383,[281,268,304],"LayoutAnimation");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -42984,7 +42994,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = dismissKeyboard;
-},382,[270],"dismissKeyboard");
+},384,[269],"dismissKeyboard");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -43005,7 +43015,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = Subscribable;
-},383,[],"Subscribable");
+},385,[],"Subscribable");
 __d(function (global, require, module, exports, _dependencyMap) {
   "use strict";
 
@@ -43018,7 +43028,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = nullthrows;
-},384,[],"fbjs/lib/nullthrows.js");
+},386,[],"fbjs/lib/nullthrows.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -43026,7 +43036,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = _require.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 
   module.exports = __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactNativeComponentTree;
-},385,[184],"ReactNativeComponentTree");
+},387,[184],"ReactNativeComponentTree");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -43180,7 +43190,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = ScrollViewStickyHeader;
-},386,[12,22,346,282,283],"ScrollViewStickyHeader");
+},388,[12,22,348,284,322],"ScrollViewStickyHeader");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -43195,7 +43205,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = processDecelerationRate;
-},387,[],"processDecelerationRate");
+},389,[],"processDecelerationRate");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -43284,7 +43294,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = CheckBox;
-},607,[279,292,282,283,306,316,318],"CheckBox");
+},390,[279,281,284,322,285,326,299],"CheckBox");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -43391,7 +43401,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = DummyDatePickerIOS;
-},608,[12,22,282,283,336,304],"DatePickerIOS");
+},391,[12,22,284,322,335,324],"DatePickerIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -43604,7 +43614,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   });
   var AndroidDrawerLayout = requireNativeComponent('AndroidDrawerLayout', DrawerLayoutAndroid);
   module.exports = DrawerLayoutAndroid;
-},609,[278,279,597,282,292,184,446,283,269,304,306,316,382,318],"DrawerLayoutAndroid");
+},392,[277,279,215,284,281,184,393,322,268,324,285,326,384,299],"DrawerLayoutAndroid");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -43864,7 +43874,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }, _temp2));
 
   module.exports = StatusBar;
-},446,[12,22,282,292,278,597,258,178],"StatusBar");
+},393,[12,22,284,281,277,215,306,178],"StatusBar");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -44219,7 +44229,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(React.PureComponent), _class.defaultProps = defaultProps, _temp));
 
   module.exports = FlatList;
-},394,[12,22,395,282,304,402,396,18],"FlatList");
+},394,[12,22,395,284,324,402,396,18],"FlatList");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -44467,7 +44477,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }, _temp2));
 
   module.exports = MetroListView;
-},395,[12,22,396,282,401,376,18],"MetroListView");
+},395,[12,22,396,284,401,378,18],"MetroListView");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -44977,7 +44987,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = ListView;
-},396,[397,597,282,292,184,178,376,378,399,388,304,400,316,398,309,19,18],"ListView");
+},396,[397,215,284,281,184,178,378,380,399,345,324,400,326,398,288,19,18],"ListView");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -45315,7 +45325,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }, _temp));
 
   module.exports = StaticRenderer;
-},399,[12,22,282,292],"StaticRenderer");
+},399,[12,22,284,281],"StaticRenderer");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -45446,7 +45456,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = RefreshControl;
-},401,[278,279,597,282,292,306,316,318,269],"RefreshControl");
+},401,[277,279,215,284,281,285,326,299,268],"RefreshControl");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -47013,7 +47023,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = VirtualizedList;
-},402,[12,22,403,404,292,282,184,401,376,283,269,304,405,263,255,18,19,406],"VirtualizedList");
+},402,[12,22,403,404,281,284,184,401,378,322,268,324,405,262,255,18,19,406],"VirtualizedList");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -47076,7 +47086,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = Batchinator;
-},403,[354],"Batchinator");
+},403,[356],"Batchinator");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -47804,7 +47814,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(React.Component));
 
   module.exports = ImageBackground;
-},407,[12,22,605,282,283,304,408],"ImageBackground");
+},407,[12,22,376,284,322,324,408],"ImageBackground");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -48102,12 +48112,12 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = KeyboardAvoidingView;
-},411,[316,380,381,597,292,282,388,304,306],"KeyboardAvoidingView");
+},411,[326,382,383,215,281,284,345,324,285],"KeyboardAvoidingView");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
   module.exports = require(_dependencyMap[0], 'UnimplementedView');
-},610,[281],"MaskedViewIOS");
+},412,[413],"MaskedViewIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -48196,7 +48206,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     } : {}
   });
   module.exports = UnimplementedView;
-},281,[12,22,282,283,304],"UnimplementedView");
+},413,[12,22,284,322,324],"UnimplementedView");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -48426,7 +48436,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _defineProperty(_container, side, 0), _defineProperty(_container, "top", 0), _container)
   });
   module.exports = Modal;
-},413,[12,22,414,433,230,178,597,282,292,283,304,297,318],"Modal");
+},414,[12,22,415,434,230,178,215,284,281,322,324,297,299],"Modal");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -48633,7 +48643,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = AppContainer;
-},414,[12,22,226,292,231,282,184,283,304,415,431],"AppContainer");
+},415,[12,22,226,281,231,284,184,322,324,416,432],"AppContainer");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -48991,7 +49001,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = Inspector;
-},415,[12,22,285,416,420,597,282,184,283,337,269,304,15,18,263],"Inspector");
+},416,[12,22,318,417,421,215,284,184,322,336,268,324,15,18,262],"Inspector");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -49137,7 +49147,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = InspectorOverlay;
-},416,[12,22,285,417,292,282,283,269,304],"InspectorOverlay");
+},417,[12,22,318,418,281,284,322,268,324],"InspectorOverlay");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -49291,7 +49301,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = ElementBox;
-},417,[12,22,282,304,283,418,419,263],"ElementBox");
+},418,[12,22,284,324,322,419,420,262],"ElementBox");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -49380,7 +49390,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(React.Component));
 
   module.exports = BorderBox;
-},418,[12,22,282,304],"BorderBox");
+},419,[12,22,284,324],"BorderBox");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -49427,7 +49437,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = resolveBoxStyle;
-},419,[],"resolveBoxStyle");
+},420,[],"resolveBoxStyle");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -49743,7 +49753,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = InspectorPanel;
-},420,[12,22,421,427,430,282,292,376,283,336,424,304],"InspectorPanel");
+},421,[12,22,422,428,431,284,281,378,322,335,425,324],"InspectorPanel");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -50032,7 +50042,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = ElementProperties;
-},421,[12,22,422,292,282,423,283,336,424,389,304,263,425,426],"ElementProperties");
+},422,[12,22,423,281,284,424,322,335,425,344,324,262,426,427],"ElementProperties");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -50324,7 +50334,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = BoxInspector;
-},422,[12,22,282,283,336,304,419],"BoxInspector");
+},423,[12,22,284,322,335,324,420],"BoxInspector");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -50492,7 +50502,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = StyleInspector;
-},423,[12,22,282,283,336,304],"StyleInspector");
+},424,[12,22,284,322,335,324],"StyleInspector");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -50682,7 +50692,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = TouchableHighlight;
-},424,[278,279,292,282,305,283,337,389,304,306,316,390],"TouchableHighlight");
+},425,[277,279,281,284,325,322,336,344,324,285,326,346],"TouchableHighlight");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -50701,7 +50711,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = mapWithSeparator;
-},425,[],"mapWithSeparator");
+},426,[],"mapWithSeparator");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -50718,7 +50728,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = openFileInEditor;
-},426,[199],"openFileInEditor");
+},427,[199],"openFileInEditor");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -51522,7 +51532,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = NetworkOverlay;
-},427,[12,22,396,282,376,283,336,424,304,428,429],"NetworkOverlay");
+},428,[12,22,396,284,378,322,335,425,324,429,430],"NetworkOverlay");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -51683,7 +51693,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = WebSocketInterceptor;
-},428,[178,230,234],"WebSocketInterceptor");
+},429,[178,230,234],"WebSocketInterceptor");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -51802,7 +51812,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = XHRInterceptor;
-},429,[219],"XHRInterceptor");
+},430,[219],"XHRInterceptor");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -51947,7 +51957,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = PerformanceOverlay;
-},430,[12,22,254,282,283,336,304],"PerformanceOverlay");
+},431,[12,22,254,284,322,335,324],"PerformanceOverlay");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -52732,12 +52742,12 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = YellowBox;
-},431,[12,22,228,597,282,611,283,252,255,426,195,202,198,336,424,304,376],"YellowBox");
+},432,[12,22,228,215,284,433,322,252,255,427,195,202,198,335,425,324,378],"YellowBox");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
   module.exports = require(_dependencyMap[0], 'View');
-},611,[304],"SafeAreaView");
+},433,[324],"SafeAreaView");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -52749,12 +52759,12 @@ __d(function (global, require, module, exports, _dependencyMap) {
     swapLeftAndRightInRTL: function swapLeftAndRightInRTL() {}
   };
   module.exports = I18nManager;
-},433,[178],"I18nManager");
+},434,[178],"I18nManager");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
   module.exports = require(_dependencyMap[0], 'UnimplementedView');
-},612,[281],"NavigatorIOS");
+},435,[413],"NavigatorIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -52919,12 +52929,12 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }), _temp2));
 
   module.exports = Picker;
-},436,[12,22,278,613,614,597,282,292,314,298,281,306,299],"Picker");
+},436,[12,22,277,437,438,215,284,281,292,305,413,285,293],"Picker");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
   module.exports = require(_dependencyMap[0], 'UnimplementedView');
-},613,[281],"PickerIOS");
+},437,[413],"PickerIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -53130,7 +53140,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   var DropdownPicker = requireNativeComponent('AndroidDropdownPicker', PickerAndroid, cfg);
   var DialogPicker = requireNativeComponent('AndroidDialogPicker', PickerAndroid, cfg);
   module.exports = PickerAndroid;
-},614,[12,22,278,282,292,283,314,306,299,258,318],"PickerAndroid");
+},438,[12,22,277,284,281,322,292,285,293,306,299],"PickerAndroid");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -53237,7 +53247,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = DummyProgressViewIOS;
-},615,[12,22,282,283,336,304],"ProgressViewIOS");
+},439,[12,22,284,322,335,324],"ProgressViewIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -53381,7 +53391,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(React.PureComponent), _class.defaultProps = defaultProps, _temp2));
 
   module.exports = SectionList;
-},440,[12,22,395,597,282,376,441],"SectionList");
+},440,[12,22,395,215,284,378,441],"SectionList");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -53857,7 +53867,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = VirtualizedSectionList;
-},441,[12,22,282,304,402,18],"VirtualizedSectionList");
+},441,[12,22,284,324,402,18],"VirtualizedSectionList");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -53964,7 +53974,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = DummySegmentedControlIOS;
-},616,[12,22,282,283,336,304],"SegmentedControlIOS");
+},442,[12,22,284,322,335,324],"SegmentedControlIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -54098,12 +54108,12 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   var RCTSlider = requireNativeComponent('RCTSlider', Slider, options);
   module.exports = Slider;
-},443,[605,278,279,305,597,282,292,283,306,316,318],"Slider");
+},443,[376,277,279,325,215,284,281,322,285,326,299],"Slider");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
   module.exports = require(_dependencyMap[0], 'UnimplementedView');
-},617,[281],"SnapshotViewIOS");
+},444,[413],"SnapshotViewIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -54221,7 +54231,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = Switch;
-},445,[278,279,597,282,292,283,306,316,318],"Switch");
+},445,[277,279,215,284,281,322,285,326,299],"Switch");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -54416,7 +54426,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }), _temp));
 
   module.exports = SwipeableFlatList;
-},447,[12,22,292,282,448,394],"SwipeableFlatList");
+},446,[12,22,281,284,447,394],"SwipeableFlatList");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -54705,7 +54715,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = SwipeableRow;
-},448,[346,433,449,282,292,283,388,304,316,16],"SwipeableRow");
+},447,[348,434,448,284,281,322,345,324,326,16],"SwipeableRow");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -54866,7 +54876,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = PanResponder;
-},449,[354,450],"PanResponder");
+},448,[356,449],"PanResponder");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -54874,7 +54884,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = _require.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 
   module.exports = __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.TouchHistoryMath;
-},450,[184],"TouchHistoryMath");
+},449,[184],"TouchHistoryMath");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -55105,7 +55115,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }, _temp));
 
   module.exports = SwipeableListView;
-},451,[12,22,396,292,282,452,448],"SwipeableListView");
+},450,[12,22,396,281,284,451,447],"SwipeableListView");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -55186,7 +55196,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = SwipeableListViewDataSource;
-},452,[397],"SwipeableListViewDataSource");
+},451,[397],"SwipeableListViewDataSource");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -55274,7 +55284,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = DummyTabBarIOS;
-},618,[12,22,282,283,619,304],"TabBarIOS");
+},452,[12,22,284,322,453,324],"TabBarIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -55372,7 +55382,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = DummyTab;
-},619,[12,22,282,304,283],"TabBarItemIOS");
+},453,[12,22,284,324,322],"TabBarItemIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -55828,7 +55838,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = TextInput;
-},455,[278,456,228,279,597,282,316,292,184,283,336,270,388,389,269,306,16,18,318,19],"TextInput");
+},454,[277,455,228,279,215,284,326,281,184,322,335,269,345,344,268,285,16,18,299,19],"TextInput");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -55928,7 +55938,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     'update': true
   });
   module.exports = DocumentSelectionState;
-},456,[457],"DocumentSelectionState");
+},455,[456],"DocumentSelectionState");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -56018,7 +56028,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = mixInEventEmitter;
-},457,[228,458,459,18,460,461],"mixInEventEmitter");
+},456,[228,457,458,18,459,460],"mixInEventEmitter");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -56121,7 +56131,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = EventEmitterWithHolding;
-},458,[],"EventEmitterWithHolding");
+},457,[],"EventEmitterWithHolding");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -56203,7 +56213,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = EventHolder;
-},459,[18],"EventHolder");
+},458,[18],"EventHolder");
 __d(function (global, require, module, exports, _dependencyMap) {
   "use strict";
 
@@ -56222,7 +56232,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = keyOf;
-},460,[],"fbjs/lib/keyOf.js");
+},459,[],"fbjs/lib/keyOf.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -56327,7 +56337,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = EventValidator;
-},461,[],"EventValidator");
+},460,[],"EventValidator");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -56442,7 +56452,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = ToolbarAndroid;
-},620,[605,279,282,292,305,269,306,278,316,318,324],"ToolbarAndroid");
+},461,[376,279,284,281,325,268,285,277,326,299,314],"ToolbarAndroid");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -56608,7 +56618,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   var NativeAndroidViewPager = requireNativeComponent('AndroidViewPager', ViewPagerAndroid);
   module.exports = ViewPagerAndroid;
-},621,[12,22,282,292,184,269,306,382,318],"ViewPagerAndroid");
+},462,[12,22,284,281,184,268,285,384,299],"ViewPagerAndroid");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -56954,7 +56964,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   });
   module.exports = WebView;
-},622,[12,22,307,277,282,292,184,283,269,304,306,297,290,318,324],"WebView");
+},463,[12,22,286,276,284,281,184,322,268,324,285,297,304,299,314],"WebView");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -56984,7 +56994,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = ActionSheetIOS;
-},466,[178,18,258],"ActionSheetIOS");
+},464,[178,18,306],"ActionSheetIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -57113,7 +57123,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
   BatchedBridge.registerCallableModule('AppRegistry', AppRegistry);
   module.exports = AppRegistry;
-},467,[179,468,178,184,470,255,18,471],"AppRegistry");
+},465,[179,466,178,184,468,255,18,469],"AppRegistry");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -57251,7 +57261,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   BugReporting._subscription = null;
   BugReporting._redboxSubscription = null;
   module.exports = BugReporting;
-},468,[231,189,255,469,178],"BugReporting");
+},466,[231,189,255,467,178],"BugReporting");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -57268,7 +57278,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = dumpReactTree;
-},469,[],"dumpReactTree");
+},467,[],"dumpReactTree");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -57300,7 +57310,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = SceneTracker;
-},470,[],"SceneTracker");
+},468,[],"SceneTracker");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -57383,7 +57393,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = renderApplication;
-},471,[414,282,184,18,623],"renderApplication");
+},469,[415,284,184,18,470],"renderApplication");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -57428,7 +57438,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = BackHandler;
-},623,[178,231],"BackHandler");
+},470,[178,231],"BackHandler");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -57654,7 +57664,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = AsyncStorage;
-},473,[178],"AsyncStorage");
+},471,[178],"AsyncStorage");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -57677,7 +57687,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = BackAndroid;
-},474,[623,19],"BackAndroid");
+},472,[470,19],"BackAndroid");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -57820,7 +57830,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   CameraRoll.GroupTypesOptions = GROUP_TYPES_OPTIONS;
   CameraRoll.AssetTypeOptions = ASSET_TYPE_OPTIONS;
   module.exports = CameraRoll;
-},475,[292,178,308,18],"CameraRoll");
+},473,[281,178,287,18],"CameraRoll");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -57834,7 +57844,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       Clipboard.setString(content);
     }
   };
-},476,[178],"Clipboard");
+},474,[178],"Clipboard");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -57900,7 +57910,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = DatePickerAndroid;
-},624,[178],"DatePickerAndroid");
+},475,[178],"DatePickerAndroid");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -57930,7 +57940,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = ImagePickerIOS;
-},478,[178],"ImagePickerIOS");
+},476,[178],"ImagePickerIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -58002,7 +58012,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(NativeEventEmitter);
 
   module.exports = new Linking();
-},479,[230,178,597,18],"Linking");
+},477,[230,178,215,18],"Linking");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -58129,7 +58139,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = NetInfo;
-},480,[189,230,178,597],"NetInfo");
+},478,[189,230,178,215],"NetInfo");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -58377,7 +58387,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     ResultFailed: 'UIBackgroundFetchResultFailed'
   };
   module.exports = PushNotificationIOS;
-},481,[230,178,18],"PushNotificationIOS");
+},479,[230,178,18],"PushNotificationIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -58398,7 +58408,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = Settings;
-},625,[],"Settings");
+},480,[],"Settings");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -58473,14 +58483,14 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = Share;
-},483,[597,18,258,178],"Share");
+},481,[215,18,306,178],"Share");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
   var NativeEventEmitter = require(_dependencyMap[0], 'NativeEventEmitter');
 
   module.exports = new NativeEventEmitter('StatusBarManager');
-},626,[230],"StatusBarIOS");
+},482,[230],"StatusBarIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -58527,7 +58537,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   module.exports = TimePickerAndroid;
-},627,[178],"TimePickerAndroid");
+},483,[178],"TimePickerAndroid");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -58619,7 +58629,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = Vibration;
-},486,[178,597],"Vibration");
+},484,[178,215],"Vibration");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -58631,7 +58641,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   module.exports = VibrationIOS;
-},628,[19],"VibrationIOS");
+},485,[19],"VibrationIOS");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -58639,7 +58649,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED = _require.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
 
   module.exports = __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.takeSnapshot;
-},488,[184],"takeSnapshot");
+},486,[184],"takeSnapshot");
 __d(function (global, require, module, exports, _dependencyMap) {
   module.exports = {
     get createNavigationContainer() {
@@ -58739,7 +58749,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
 
   };
-},489,[490,495,493,492,496,497,532,549,523,533,520,498,499,501,505,504,508,509,551,556,534,546,548,557],"react-navigation/src/react-navigation.js");
+},487,[488,493,491,490,494,495,530,547,521,531,518,496,497,499,503,502,506,507,549,552,532,544,546,553],"react-navigation/src/react-navigation.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -59052,7 +59062,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
     return NavigationContainer;
   }
-},490,[12,22,491,492,493,494],"react-navigation/src/createNavigationContainer.js");
+},488,[12,22,489,490,491,492],"react-navigation/src/createNavigationContainer.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -59064,7 +59074,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   var BackHandler = _reactNative.BackHandler || _reactNative.BackAndroid;
   exports.BackHandler = BackHandler;
   exports.Linking = _reactNative.Linking;
-},491,[176],"react-navigation/src/PlatformHelpers.native.js");
+},489,[176],"react-navigation/src/PlatformHelpers.native.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -59271,7 +59281,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     completeTransition: completeTransition,
     mapDeprecatedActionAndWarn: mapDeprecatedActionAndWarn
   };
-},492,[],"react-navigation/src/NavigationActions.js");
+},490,[],"react-navigation/src/NavigationActions.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -59353,7 +59363,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   var _invariant2 = _interopRequireDefault(_invariant);
 
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},493,[492,494],"react-navigation/src/addNavigationHelpers.js");
+},491,[490,492],"react-navigation/src/addNavigationHelpers.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -59390,7 +59400,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = invariant;
-},494,[],"react-navigation/src/utils/invariant.js");
+},492,[],"react-navigation/src/utils/invariant.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -59504,7 +59514,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
   };
   exports.default = StateUtils;
-},495,[494],"react-navigation/src/StateUtils.js");
+},493,[492],"react-navigation/src/StateUtils.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -59586,7 +59596,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       return Navigator;
     };
   }
-},496,[12,22],"react-navigation/src/navigators/createNavigator.js");
+},494,[12,22],"react-navigation/src/navigators/createNavigator.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -59665,7 +59675,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     });
     return (0, _createNavigationContainer2.default)(navigator);
   };
-},497,[12,490,496,498,523,492],"react-navigation/src/navigators/StackNavigator.js");
+},495,[12,488,494,496,521,490],"react-navigation/src/navigators/StackNavigator.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -59805,7 +59815,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }, _temp2));
 
   exports.default = CardStackTransitioner;
-},498,[12,22,176,499,518,520,517],"react-navigation/src/views/CardStack/CardStackTransitioner.js");
+},496,[12,22,176,497,516,518,515],"react-navigation/src/views/CardStack/CardStackTransitioner.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -60296,14 +60306,14 @@ __d(function (global, require, module, exports, _dependencyMap) {
   });
 
   exports.default = CardStack;
-},499,[12,22,500,176,501,504,492,493,515,516,517],"react-navigation/src/views/CardStack/CardStack.js");
+},497,[12,22,498,176,499,502,490,491,513,514,515],"react-navigation/src/views/CardStack/CardStack.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   module.exports = clamp;
 
   function clamp(value, min, max) {
     return min < max ? value < min ? min : value > max ? max : value : value < max ? max : value > min ? min : value;
   }
-},500,[],"clamp/index.js");
+},498,[],"clamp/index.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -60409,7 +60419,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
   Card = (0, _PointerEventsContainer2.default)(Card);
   exports.default = Card;
-},501,[12,22,176,502],"react-navigation/src/views/CardStack/Card.js");
+},499,[12,22,176,500],"react-navigation/src/views/CardStack/Card.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -60573,7 +60583,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
     return Container;
   }
-},502,[12,22,494,503],"react-navigation/src/views/CardStack/PointerEventsContainer.js");
+},500,[12,22,492,501],"react-navigation/src/views/CardStack/PointerEventsContainer.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -60604,7 +60614,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }();
 
   exports.default = AnimatedValueSubscription;
-},503,[176],"react-navigation/src/views/AnimatedValueSubscription.js");
+},501,[176],"react-navigation/src/views/AnimatedValueSubscription.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -61068,7 +61078,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   });
 
   exports.default = (0, _withOrientation2.default)(Header);
-},504,[12,22,176,505,508,509,512,514],"react-navigation/src/views/Header/Header.js");
+},502,[12,22,176,503,506,507,510,512],"react-navigation/src/views/Header/Header.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -61465,7 +61475,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }, _temp2));
 
   exports.default = (0, _withOrientation2.default)(SafeView);
-},505,[12,22,176,506],"react-native-safe-area-view/index.js");
+},503,[12,22,176,504],"react-native-safe-area-view/index.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -61586,7 +61596,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
         height = _ref.height;
     return width > height;
   };
-},506,[12,22,176,507],"react-native-safe-area-view/withOrientation.js");
+},504,[12,22,176,505],"react-native-safe-area-view/withOrientation.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     (function (global, factory) {
         typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() : typeof define === 'function' && define.amd ? define(factory) : global.hoistNonReactStatics = factory();
@@ -61653,7 +61663,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
             return targetComponent;
         };
     });
-},507,[],"hoist-non-react-statics/index.js");
+},505,[],"hoist-non-react-statics/index.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -61702,7 +61712,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   });
 
   exports.default = HeaderTitle;
-},508,[12,176],"react-navigation/src/views/Header/HeaderTitle.js");
+},506,[12,176],"react-navigation/src/views/Header/HeaderTitle.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -61895,7 +61905,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   });
 
   exports.default = HeaderBackButton;
-},509,[12,22,176,510,511],"react-navigation/src/views/Header/HeaderBackButton.js");
+},507,[12,22,176,508,509],"react-navigation/src/views/Header/HeaderBackButton.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -62011,7 +62021,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }, _temp));
 
   exports.default = TouchableItem;
-},510,[12,22,176],"react-navigation/src/views/TouchableItem.js");
+},508,[12,22,176],"react-navigation/src/views/TouchableItem.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   module.exports = require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
@@ -62023,7 +62033,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     "name": "back-icon",
     "type": "png"
   });
-},511,[325],"node_modules/react-navigation/src/views/assets/back-icon.png");
+},509,[315],"node_modules/react-navigation/src/views/assets/back-icon.png");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -62104,7 +62114,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     forCenter: forCenter,
     forRight: forRight
   };
-},512,[176,513],"react-navigation/src/views/Header/HeaderStyleInterpolator.js");
+},510,[176,511],"react-navigation/src/views/Header/HeaderStyleInterpolator.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -62154,7 +62164,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   exports.default = getSceneIndicesForInterpolationInputRange;
-},513,[],"react-navigation/src/utils/getSceneIndicesForInterpolationInputRange.js");
+},511,[],"react-navigation/src/utils/getSceneIndicesForInterpolationInputRange.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -62273,7 +62283,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
         height = _ref.height;
     return width > height;
   };
-},514,[12,22,176,507],"react-navigation/src/views/withOrientation.js");
+},512,[12,22,176,505],"react-navigation/src/views/withOrientation.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -62411,7 +62421,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       };
     };
   }
-},515,[],"react-navigation/src/getChildEventSubscriber.js");
+},513,[],"react-navigation/src/getChildEventSubscriber.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -62502,7 +62512,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }, _temp));
 
   exports.default = SceneView;
-},516,[12,22,292],"react-navigation/src/views/SceneView.js");
+},514,[12,22,281],"react-navigation/src/views/SceneView.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -62602,7 +62612,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     defaultTransitionConfig: defaultTransitionConfig,
     getTransitionConfig: getTransitionConfig
   };
-},517,[176,518,519],"react-navigation/src/views/CardStack/TransitionConfigs.js");
+},515,[176,516,517],"react-navigation/src/views/CardStack/TransitionConfigs.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -62776,7 +62786,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     forFade: forFade,
     canUseNativeDriver: canUseNativeDriver
   };
-},518,[176,513],"react-navigation/src/views/CardStack/CardStackStyleInterpolator.js");
+},516,[176,511],"react-navigation/src/views/CardStack/CardStackStyleInterpolator.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -62797,7 +62807,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
     return false;
   };
-},519,[176],"react-navigation/src/utils/ReactNativeFeatures.js");
+},517,[176],"react-navigation/src/utils/ReactNativeFeatures.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -63124,7 +63134,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   });
 
   exports.default = Transitioner;
-},520,[12,22,176,494,521],"react-navigation/src/views/Transitioner.js");
+},518,[12,22,176,492,519],"react-navigation/src/views/Transitioner.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -63287,7 +63297,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
     return scenes;
   }
-},521,[494,522],"react-navigation/src/views/ScenesReducer.js");
+},519,[492,520],"react-navigation/src/views/ScenesReducer.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -63327,7 +63337,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   module.exports = shallowEqual;
-},522,[],"react-navigation/src/utils/shallowEqual.js");
+},520,[],"react-navigation/src/utils/shallowEqual.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -63882,7 +63892,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       getScreenConfig: _getScreenConfigDeprecated2.default
     };
   };
-},523,[524,492,526,527,495,529,530,494,531],"react-navigation/src/routers/StackRouter.js");
+},521,[522,490,524,525,493,527,528,492,529],"react-navigation/src/routers/StackRouter.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   var isarray = require(_dependencyMap[0], 'isarray');
 
@@ -64173,12 +64183,12 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
     return stringToRegexp(path, keys, options);
   }
-},524,[525],"path-to-regexp/index.js");
+},522,[523],"path-to-regexp/index.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   module.exports = Array.isArray || function (arr) {
     return Object.prototype.toString.call(arr) == '[object Array]';
   };
-},525,[],"isarray/index.js");
+},523,[],"isarray/index.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -64263,7 +64273,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       return outputConfig;
     };
   };
-},526,[494,527,493,528,515],"react-navigation/src/routers/createConfigGetter.js");
+},524,[492,525,491,526,513],"react-navigation/src/routers/createConfigGetter.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -64297,7 +64307,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
     throw new Error("Route " + routeName + " must define a screen or a getScreen.");
   }
-},527,[494],"react-navigation/src/routers/getScreenForRouteName.js");
+},525,[492],"react-navigation/src/routers/getScreenForRouteName.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -64329,7 +64339,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       })), ['}']).join('\n'));
     }
   };
-},528,[],"react-navigation/src/routers/validateScreenOptions.js");
+},526,[],"react-navigation/src/routers/validateScreenOptions.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -64360,7 +64370,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }
 
   exports.default = validateRouteConfigMap;
-},529,[494],"react-navigation/src/routers/validateRouteConfigMap.js");
+},527,[492],"react-navigation/src/routers/validateRouteConfigMap.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -64375,7 +64385,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   exports.default = function () {
     return (0, _invariant2.default)(false, '`getScreenConfig` has been replaced with `getScreenOptions`');
   };
-},530,[494],"react-navigation/src/routers/getScreenConfigDeprecated.js");
+},528,[492],"react-navigation/src/routers/getScreenConfigDeprecated.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -64393,7 +64403,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   function generateKey() {
     return uniqueBaseId + "-" + uuidCount++;
   }
-},531,[],"react-navigation/src/routers/KeyGenerator.js");
+},529,[],"react-navigation/src/routers/KeyGenerator.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -64491,7 +64501,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     Default: _reactNative.Platform.OS === 'ios' ? Presets.iOSBottomTabs : Presets.AndroidTopTabs
   };
   exports.default = TabNavigator;
-},532,[12,176,496,490,533,534,546,548],"react-navigation/src/navigators/TabNavigator.js");
+},530,[12,176,494,488,531,532,544,546],"react-navigation/src/navigators/TabNavigator.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -64814,7 +64824,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       getScreenConfig: _getScreenConfigDeprecated2.default
     };
   };
-},533,[494,527,526,492,529,530],"react-navigation/src/routers/TabRouter.js");
+},531,[492,525,524,490,527,528],"react-navigation/src/routers/TabRouter.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -65080,7 +65090,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       overflow: 'hidden'
     }
   });
-},534,[12,22,176,535,505,516,545],"react-navigation/src/views/TabView/TabView.js");
+},532,[12,22,176,533,503,514,543],"react-navigation/src/views/TabView/TabView.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   module.exports = {
     get TabViewAnimated() {
@@ -65112,7 +65122,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }
 
   };
-},535,[536,540,539,538,541,542,544],"react-native-tab-view/src/index.js");
+},533,[534,538,537,536,539,540,542],"react-native-tab-view/src/index.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -65392,7 +65402,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       overflow: 'hidden'
     }
   });
-},536,[12,22,292,176,537,538,539,540],"react-native-tab-view/src/TabViewAnimated.js");
+},534,[12,22,281,176,535,536,537,538],"react-native-tab-view/src/TabViewAnimated.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -65446,7 +65456,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     useNativeDriver: _propTypes2.default.bool,
     children: _propTypes2.default.node.isRequired
   };
-},537,[292,176],"react-native-tab-view/src/TabViewPropTypes.js");
+},535,[281,176],"react-native-tab-view/src/TabViewPropTypes.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -65645,7 +65655,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       overflow: 'hidden'
     }
   });
-},538,[12,22,176,537],"react-native-tab-view/src/TabViewPagerAndroid.js");
+},536,[12,22,176,535],"react-native-tab-view/src/TabViewPagerAndroid.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -65870,7 +65880,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       overflow: 'hidden'
     }
   });
-},539,[12,22,176,537],"react-native-tab-view/src/TabViewPagerScroll.js");
+},537,[12,22,176,535],"react-native-tab-view/src/TabViewPagerScroll.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -66142,7 +66152,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       alignItems: 'stretch'
     }
   });
-},540,[12,22,292,176,537],"react-native-tab-view/src/TabViewPagerPan.js");
+},538,[12,22,281,176,535],"react-native-tab-view/src/TabViewPagerPan.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -66394,7 +66404,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       alignItems: 'stretch'
     }
   });
-},541,[12,22,292,176,537],"react-native-tab-view/src/TabViewPagerExperimental.js");
+},539,[12,22,281,176,535],"react-native-tab-view/src/TabViewPagerExperimental.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -67014,7 +67024,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       height: 2
     }
   });
-},542,[12,22,292,176,543,537],"react-native-tab-view/src/TabBar.js");
+},540,[12,22,281,176,541,535],"react-native-tab-view/src/TabBar.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -67158,7 +67168,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }, _temp2));
 
   exports.default = TouchableItem;
-},543,[12,22,292,176],"react-native-tab-view/src/TouchableItem.js");
+},541,[12,22,281,176],"react-native-tab-view/src/TouchableItem.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -67240,7 +67250,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       });
     };
   }
-},544,[12,22],"react-native-tab-view/src/SceneMap.js");
+},542,[12,22],"react-native-tab-view/src/SceneMap.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -67362,7 +67372,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       return _class;
     }(_react3.default.PureComponent), _class.displayName = "withCachedChildNavigation(" + displayName + ")", _temp2));
   }
-},545,[12,22,493,515],"react-navigation/src/withCachedChildNavigation.js");
+},543,[12,22,491,513],"react-navigation/src/withCachedChildNavigation.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -67581,7 +67591,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       backgroundColor: 'transparent'
     }
   });
-},546,[12,22,176,535,547],"react-navigation/src/views/TabView/TabBarTop.js");
+},544,[12,22,176,533,545],"react-navigation/src/views/TabView/TabBarTop.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -67732,7 +67742,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       justifyContent: 'center'
     }
   });
-},547,[12,22,176],"react-navigation/src/views/TabView/TabBarIcon.js");
+},545,[12,22,176],"react-navigation/src/views/TabView/TabBarIcon.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68142,7 +68152,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   });
 
   exports.default = (0, _withOrientation2.default)(TabBarBottom);
-},548,[12,22,176,505,547,514],"react-navigation/src/views/TabView/TabBarBottom.js");
+},546,[12,22,176,503,545,512],"react-navigation/src/views/TabView/TabBarBottom.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68309,7 +68319,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   exports.default = DrawerNavigator;
-},549,[12,176,505,496,490,533,550,551,556],"react-navigation/src/navigators/DrawerNavigator.js");
+},547,[12,176,503,494,488,531,548,549,552],"react-navigation/src/navigators/DrawerNavigator.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68400,7 +68410,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(_react3.default.PureComponent));
 
   exports.default = (0, _withCachedChildNavigation2.default)(DrawerScreen);
-},550,[12,22,516,545],"react-navigation/src/views/Drawer/DrawerScreen.js");
+},548,[12,22,514,543],"react-navigation/src/views/Drawer/DrawerScreen.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68628,7 +68638,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   }(_react3.default.PureComponent));
 
   exports.default = DrawerView;
-},551,[12,22,176,629,493,555,515],"react-navigation/src/views/Drawer/DrawerView.js");
+},549,[12,22,176,550,491,551,513],"react-navigation/src/views/Drawer/DrawerView.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68637,7 +68647,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   var _reactNative = require(_dependencyMap[0], 'react-native');
 
   exports.default = _reactNative.DrawerLayoutAndroid;
-},629,[176],"react-native-drawer-layout-polyfill/dist/index.android.js");
+},550,[176],"react-native-drawer-layout-polyfill/dist/index.android.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68835,7 +68845,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       flex: 1
     }
   });
-},555,[12,22,176,505,545,492,494],"react-navigation/src/views/Drawer/DrawerSidebar.js");
+},551,[12,22,176,503,543,490,492],"react-navigation/src/views/Drawer/DrawerSidebar.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68999,7 +69009,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   });
 
   exports.default = DrawerNavigatorItems;
-},556,[12,176,505,510],"react-navigation/src/views/Drawer/DrawerNavigatorItems.js");
+},552,[12,176,503,508],"react-navigation/src/views/Drawer/DrawerNavigatorItems.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -69091,7 +69101,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 
     return (0, _hoistNonReactStatics2.default)(ComponentWithNavigation, Component);
   }
-},557,[12,22,292,507],"react-navigation/src/views/withNavigation.js");
+},553,[12,22,281,505],"react-navigation/src/views/withNavigation.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     Object.defineProperty(exports, "__esModule", {
         value: true
@@ -69418,7 +69428,9 @@ __d(function (global, require, module, exports, _dependencyMap) {
             value: function gocontact() {}
         }, {
             key: "gohome",
-            value: function gohome() {}
+            value: function gohome() {
+                this.props.navigation.navigate('Home');
+            }
         }, {
             key: "render",
             value: function render() {
@@ -69430,7 +69442,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                         style: styles.container,
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 153
+                            lineNumber: 154
                         }
                     },
                     _react3.default.createElement(
@@ -69439,7 +69451,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                             style: styles.header,
                             __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 154
+                                lineNumber: 155
                             }
                         },
                         _react3.default.createElement(
@@ -69452,7 +69464,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                                 style: styles.backTouch,
                                 __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 155
+                                    lineNumber: 156
                                 }
                             },
                             _react3.default.createElement(_reactNative.Image, {
@@ -69463,7 +69475,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                                 style: styles.back,
                                 __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 157
+                                    lineNumber: 158
                                 }
                             })
                         ),
@@ -69473,7 +69485,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                                 style: styles.destination,
                                 __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 160
+                                    lineNumber: 161
                                 }
                             },
                             "\u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629"
@@ -69489,7 +69501,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                                 style: styles.homeTouch,
                                 __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 161
+                                    lineNumber: 162
                                 }
                             },
                             _react3.default.createElement(_reactNative.Image, {
@@ -69500,7 +69512,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                                 style: styles.home,
                                 __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 166
+                                    lineNumber: 167
                                 }
                             })
                         )
@@ -69515,7 +69527,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                             },
                             __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 169
+                                lineNumber: 170
                             }
                         },
                         _react3.default.createElement(_reactNativeIndicator.CirclesLoader, {
@@ -69523,7 +69535,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                             dotRadius: deviceWidth * .03,
                             __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 170
+                                lineNumber: 171
                             }
                         })
                     ) : _react3.default.createElement(
@@ -69534,7 +69546,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                             },
                             __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 172
+                                lineNumber: 173
                             }
                         },
                         _react3.default.createElement(
@@ -69545,7 +69557,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                                 style: {},
                                 __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 173
+                                    lineNumber: 174
                                 }
                             },
                             _react3.default.createElement(_reactNative.ListView, {
@@ -69557,7 +69569,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                                 style: styles.listView,
                                 __source: {
                                     fileName: _jsxFileName,
-                                    lineNumber: 174
+                                    lineNumber: 175
                                 }
                             })
                         )
@@ -69677,7 +69689,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
             paddingBottom: deviceHight * .17
         }
     });
-},558,[12,22,176,489,559,560,584],"Zamlek/screens/Home.js");
+},554,[12,22,176,487,555,556,580],"Zamlek/screens/Home.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     ;
 
@@ -73787,7 +73799,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
         };
         return hooks;
     });
-},559,[],"moment/moment.js");
+},555,[],"moment/moment.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   'use strict';
 
@@ -73883,7 +73895,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   var NineCubesLoader = exports.NineCubesLoader = _NineCubesLoader2.default;
   var LineDotsLoader = exports.LineDotsLoader = _LineDotsLoader2.default;
   var ColorDotsLoader = exports.ColorDotsLoader = _ColorDotsLoader2.default;
-},560,[561,564,565,566,567,568,569,570,573,575,576,577,578,579,580,582,583],"react-native-indicator/index.js");
+},556,[557,560,561,562,563,564,565,566,569,571,572,573,574,575,576,578,579],"react-native-indicator/index.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -74044,7 +74056,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = DotsLoader;
-},561,[12,22,292,176,562],"react-native-indicator/lib/loader/DotsLoader.js");
+},557,[12,22,281,176,558],"react-native-indicator/lib/loader/DotsLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -74059,7 +74071,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
   exports.default = AnimatedCircle = _reactNative.Animated.createAnimatedComponent(_Circle2.default);
-},562,[563,176],"react-native-indicator/lib/animated/AnimatedCircle.js");
+},558,[559,176],"react-native-indicator/lib/animated/AnimatedCircle.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -74150,7 +74162,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = Circle;
-},563,[12,22,292,176],"react-native-indicator/lib/shape/Circle.js");
+},559,[12,22,281,176],"react-native-indicator/lib/shape/Circle.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -74305,7 +74317,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = PulseLoader;
-},564,[12,22,292,176,562],"react-native-indicator/lib/loader/PulseLoader.js");
+},560,[12,22,281,176,558],"react-native-indicator/lib/loader/PulseLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -74466,7 +74478,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = TextLoader;
-},565,[12,22,292,176],"react-native-indicator/lib/loader/TextLoader.js");
+},561,[12,22,281,176],"react-native-indicator/lib/loader/TextLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -74632,7 +74644,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = BubblesLoader;
-},566,[12,22,292,176,562],"react-native-indicator/lib/loader/BubblesLoader.js");
+},562,[12,22,281,176,558],"react-native-indicator/lib/loader/BubblesLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -74798,7 +74810,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = CirclesLoader;
-},567,[12,22,292,176,562],"react-native-indicator/lib/loader/CirclesLoader.js");
+},563,[12,22,281,176,558],"react-native-indicator/lib/loader/CirclesLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -74970,7 +74982,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = RippleLoader;
-},568,[12,22,292,176,562],"react-native-indicator/lib/loader/RippleLoader.js");
+},564,[12,22,281,176,558],"react-native-indicator/lib/loader/RippleLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -75118,7 +75130,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = BreathingLoader;
-},569,[12,22,292,176,562],"react-native-indicator/lib/loader/BreathingLoader.js");
+},565,[12,22,281,176,558],"react-native-indicator/lib/loader/BreathingLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -75293,7 +75305,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = LinesLoader;
-},570,[12,22,292,176,571],"react-native-indicator/lib/loader/LinesLoader.js");
+},566,[12,22,281,176,567],"react-native-indicator/lib/loader/LinesLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -75308,7 +75320,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
   exports.default = AnimatedBar = _reactNative.Animated.createAnimatedComponent(_Bar2.default);
-},571,[572,176],"react-native-indicator/lib/animated/AnimatedBar.js");
+},567,[568,176],"react-native-indicator/lib/animated/AnimatedBar.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -75401,7 +75413,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = Bar;
-},572,[12,22,292,176],"react-native-indicator/lib/shape/Bar.js");
+},568,[12,22,281,176],"react-native-indicator/lib/shape/Bar.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -75565,7 +75577,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = LinesLoader;
-},573,[12,22,292,176,574],"react-native-indicator/lib/loader/MusicLoader.js");
+},569,[12,22,281,176,570],"react-native-indicator/lib/loader/MusicLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -75658,7 +75670,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = Bar2;
-},574,[12,22,292,176],"react-native-indicator/lib/shape/Bar2.js");
+},570,[12,22,281,176],"react-native-indicator/lib/shape/Bar2.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -75831,7 +75843,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = EatBeanLoader;
-},575,[12,22,292,176,562],"react-native-indicator/lib/loader/EatBeanLoader.js");
+},571,[12,22,281,176,558],"react-native-indicator/lib/loader/EatBeanLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -75998,7 +76010,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = DoubleCircleLoader;
-},576,[12,22,292,176,562],"react-native-indicator/lib/loader/DoubleCircleLoader.js");
+},572,[12,22,281,176,558],"react-native-indicator/lib/loader/DoubleCircleLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -76182,7 +76194,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = RotationCircleLoader;
-},577,[12,22,292,176,562],"react-native-indicator/lib/loader/RotationCircleLoader.js");
+},573,[12,22,281,176,558],"react-native-indicator/lib/loader/RotationCircleLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -76371,7 +76383,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = RotationHoleLoader;
-},578,[12,22,292,176,562],"react-native-indicator/lib/loader/RotationHoleLoader.js");
+},574,[12,22,281,176,558],"react-native-indicator/lib/loader/RotationHoleLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -76587,7 +76599,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = RotationCircleLoader;
-},579,[12,22,292,176,562],"react-native-indicator/lib/loader/CirclesRotationScaleLoader.js");
+},575,[12,22,281,176,558],"react-native-indicator/lib/loader/CirclesRotationScaleLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -76754,7 +76766,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = NineCubesLoader;
-},580,[12,22,292,176,581],"react-native-indicator/lib/loader/NineCubesLoader.js");
+},576,[12,22,281,176,577],"react-native-indicator/lib/loader/NineCubesLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -76847,7 +76859,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = Bar3;
-},581,[12,22,292,176],"react-native-indicator/lib/shape/Bar3.js");
+},577,[12,22,281,176],"react-native-indicator/lib/shape/Bar3.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -77031,7 +77043,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = LineDotsLoader;
-},582,[12,22,292,176,562],"react-native-indicator/lib/loader/LineDotsLoader.js");
+},578,[12,22,281,176,558],"react-native-indicator/lib/loader/LineDotsLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     'use strict';
 
@@ -77259,7 +77271,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     exports.default = ColorDotsLoader;
-},583,[12,22,292,176,562],"react-native-indicator/lib/loader/ColorDotsLoader.js");
+},579,[12,22,281,176,558],"react-native-indicator/lib/loader/ColorDotsLoader.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   /**
    * @license
@@ -84429,7 +84441,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
         root._ = _;
       }
   }).call(this);
-},584,[],"lodash/lodash.js");
+},580,[],"lodash/lodash.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     var _react2 = require(_dependencyMap[0], "react");
 
@@ -84538,7 +84550,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, _temp));
 
     module.exports = SplashPage;
-},585,[12,22,176],"Zamlek/screens/Splash.js");
+},581,[12,22,176],"Zamlek/screens/Splash.js");
 __d(function (global, require, module, exports, _dependencyMap) {
     Object.defineProperty(exports, "__esModule", {
         value: true
@@ -84624,7 +84636,9 @@ __d(function (global, require, module, exports, _dependencyMap) {
             }
         }, {
             key: "gohome",
-            value: function gohome() {}
+            value: function gohome() {
+                this.props.navigation.navigate('Home');
+            }
         }, {
             key: "render",
             value: function render() {
@@ -85252,7 +85266,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     });
 
     module.exports = Detial;
-},586,[12,22,176,559,587,584],"Zamlek/screens/ItemDetials.js");
+},582,[12,22,176,555,583,580],"Zamlek/screens/ItemDetials.js");
 __d(function (global, require, module, exports, _dependencyMap) {
 	'use strict';
 
@@ -85476,7 +85490,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 		email: email,
 		web: web
 	};
-},587,[176],"react-native-communications/AKCommunications.js");
+},583,[176],"react-native-communications/AKCommunications.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -85549,12 +85563,35 @@ __d(function (global, require, module, exports, _dependencyMap) {
       _this.gohome = _this.gohome.bind(_this);
       _this.state = {
         email: '',
-        password: ''
+        password: '',
+        sureEmail: '',
+        surePassword: ''
       };
       return _this;
     }
 
     _createClass(Splash, [{
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        var _this2 = this;
+
+        _reactNative.AsyncStorage.getItem("email").then(function (value) {
+          if (value == null) {} else {
+            _this2.setState({
+              sureEmail: JSON.parse(value)
+            });
+          }
+        }).done();
+
+        _reactNative.AsyncStorage.getItem("password").then(function (value) {
+          if (value == null) {} else {
+            _this2.setState({
+              surePassword: JSON.parse(value)
+            });
+          }
+        }).done();
+      }
+    }, {
       key: "fillFields",
       value: function fillFields() {
         this.popup.confirm({
@@ -85567,7 +85604,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
               },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 52
+                lineNumber: 75
               }
             },
             "please enter correct emaill and password"
@@ -85584,7 +85621,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, {
       key: "Login",
       value: function Login() {
-        if (this.state.email !== "belalmostafa1993@gmail.com" || this.state.password !== "123456") {
+        if (this.state.email !== this.state.sureEmail || this.state.password !== this.state.surePassword) {
           this.fillFields();
         } else {
           this.props.navigation.navigate('AddItem');
@@ -85598,7 +85635,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     }, {
       key: "render",
       value: function render() {
-        var _this2 = this;
+        var _this3 = this;
 
         return _react3.default.createElement(
           _reactNative.View,
@@ -85606,7 +85643,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
             style: styles.container,
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 90
+              lineNumber: 113
             }
           },
           _react3.default.createElement(
@@ -85615,7 +85652,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
               style: styles.card2,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 92
+                lineNumber: 115
               }
             },
             _react3.default.createElement(_reactNative.TextInput, {
@@ -85635,10 +85672,10 @@ __d(function (global, require, module, exports, _dependencyMap) {
               placeholder: "Email ",
               placeholderTextColor: "#fff",
               ref: function ref(el) {
-                _this2.email = el;
+                _this3.email = el;
               },
               onChangeText: function onChangeText(email) {
-                return _this2.setState({
+                return _this3.setState({
                   email: email
                 });
               },
@@ -85646,7 +85683,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
               useNativeDriver: true,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 97
+                lineNumber: 120
               }
             }),
             _react3.default.createElement(_reactNative.TextInput, {
@@ -85666,17 +85703,17 @@ __d(function (global, require, module, exports, _dependencyMap) {
               placeholder: "Password ",
               placeholderTextColor: "#fff",
               ref: function ref(el) {
-                _this2.password = el;
+                _this3.password = el;
               },
               onChangeText: function onChangeText(password) {
-                return _this2.setState({
+                return _this3.setState({
                   password: password
                 });
               },
               value: this.state.password,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 110
+                lineNumber: 133
               }
             }),
             _react3.default.createElement(
@@ -85690,7 +85727,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                 style: styles.Eligibility,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 135
+                  lineNumber: 158
                 }
               },
               _react3.default.createElement(
@@ -85699,7 +85736,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                   style: styles.check,
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 139
+                    lineNumber: 162
                   }
                 },
                 "\u062F\u062E\u0648\u0644"
@@ -85716,7 +85753,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                 style: styles.Eligibility,
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 142
+                  lineNumber: 165
                 }
               },
               _react3.default.createElement(
@@ -85725,7 +85762,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
                   style: styles.check,
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 146
+                    lineNumber: 169
                   }
                 },
                 "\u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629"
@@ -85734,11 +85771,11 @@ __d(function (global, require, module, exports, _dependencyMap) {
           ),
           _react3.default.createElement(_reactNativePopup2.default, {
             ref: function ref(popup) {
-              return _this2.popup = popup;
+              return _this3.popup = popup;
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 156
+              lineNumber: 179
             }
           })
         );
@@ -85895,7 +85932,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       color: "#06bebd"
     }
   });
-},588,[12,22,176,489,589,584],"Zamlek/screens/Login.js");
+},584,[12,22,176,487,585,580],"Zamlek/screens/Login.js");
 __d(function (global, require, module, exports, _dependencyMap) {
 	Object.defineProperty(exports, "__esModule", {
 		value: true
@@ -86557,7 +86594,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
 			}
 		});
 	}
-},589,[12,22,292,176],"react-native-popup/index.js");
+},585,[12,22,281,176],"react-native-popup/index.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -87229,7 +87266,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
   });
 
   module.exports = Detial;
-},591,[12,22,176,592,559,584],"Zamlek/screens/AddItem.js");
+},586,[12,22,176,587,555,580],"Zamlek/screens/AddItem.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -87632,7 +87669,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
       fullscreen: true
     }
   });
-},592,[12,22,292,176,324,593],"react-native-video/Video.js");
+},587,[12,22,281,176,314,588],"react-native-video/Video.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   Object.defineProperty(exports, "__esModule", {
     value: true
@@ -87649,7 +87686,7 @@ __d(function (global, require, module, exports, _dependencyMap) {
     cover: null,
     stretch: null
   });
-},593,[594],"react-native-video/VideoResizeMode.js");
+},588,[589],"react-native-video/VideoResizeMode.js");
 __d(function (global, require, module, exports, _dependencyMap) {
   "use strict";
 
@@ -87673,7 +87710,463 @@ __d(function (global, require, module, exports, _dependencyMap) {
   };
 
   module.exports = keyMirror;
-},594,[],"keymirror/index.js");
+},589,[],"keymirror/index.js");
+__d(function (global, require, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _react2 = require(_dependencyMap[0], "react");
+
+  var _react3 = _interopRequireDefault(_react2);
+
+  var _index = require(_dependencyMap[1], "./../node_modules/react-transform-hmr/lib/index.js");
+
+  var _index2 = _interopRequireDefault(_index);
+
+  var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+  var _class,
+      _temp,
+      _jsxFileName = "/Users/macmini/Desktop/Zamlek/screens/SignUp.js";
+
+  var _reactNative = require(_dependencyMap[2], "react-native");
+
+  var _reactNavigation = require(_dependencyMap[3], "react-navigation");
+
+  var _reactNativePopup = require(_dependencyMap[4], "react-native-popup");
+
+  var _reactNativePopup2 = _interopRequireDefault(_reactNativePopup);
+
+  var _lodash = require(_dependencyMap[5], "lodash");
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+  function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _components = {
+    Splash: {
+      displayName: "Splash"
+    }
+  };
+
+  var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+    filename: "/Users/macmini/Desktop/Zamlek/screens/SignUp.js",
+    components: _components,
+    locals: [module],
+    imports: [_react3.default]
+  });
+
+  function _wrapComponent(id) {
+    return function (Component) {
+      return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+    };
+  }
+
+  var deviceWidth = _reactNative.Dimensions.get('window').width;
+
+  var deviceHight = _reactNative.Dimensions.get('window').height;
+
+  var Splash = _wrapComponent("Splash")((_temp = _class = function (_Component) {
+    _inherits(Splash, _Component);
+
+    function Splash(props) {
+      _classCallCheck(this, Splash);
+
+      var _this = _possibleConstructorReturn(this, (Splash.__proto__ || Object.getPrototypeOf(Splash)).call(this, props));
+
+      _this.SignUp = _this.SignUp.bind(_this);
+      _this.gohome = _this.gohome.bind(_this);
+      _this.state = {
+        email: '',
+        password: ''
+      };
+      return _this;
+    }
+
+    _createClass(Splash, [{
+      key: "fillFields",
+      value: function fillFields() {
+        this.popup.confirm({
+          content: [_react3.default.createElement(
+            _reactNative.Text,
+            {
+              style: {
+                fontSize: deviceWidth * .04,
+                padding: 50
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 52
+              }
+            },
+            "\u064A\u0631\u062C\u0649 \u0645\u0644\u0621 \u0647\u0630\u0647 \u0627\u0644\u062D\u0642\u0648\u0644"
+          )],
+          ok: {
+            text: "OK",
+            style: {
+              color: '#006767',
+              fontSize: deviceWidth * .04
+            }
+          }
+        });
+      }
+    }, {
+      key: "SignUp",
+      value: function SignUp() {
+        var reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        if (this.state.email === "" || this.state.password === "") {
+          this.fillFields();
+        } else {
+          if (reg.test(this.state.email) === false) {
+            this.formatEmail();
+          } else {
+            _reactNative.AsyncStorage.setItem('email', JSON.stringify(this.state.email));
+
+            _reactNative.AsyncStorage.setItem('password', JSON.stringify(this.state.password));
+
+            this.props.navigation.navigate('Login');
+          }
+        }
+      }
+    }, {
+      key: "formatEmail",
+      value: function formatEmail() {
+        this.popup.confirm({
+          content: [_react3.default.createElement(
+            _reactNative.Text,
+            {
+              style: {
+                fontSize: deviceWidth * .04,
+                padding: 50
+              },
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 96
+              }
+            },
+            "\u0645\u0646 \u0641\u0636\u0644\u0643 \u0627\u062F\u062E\u0644 \u0627\u0644\u0627\u064A\u0645\u064A\u0644 \u0628\u0634\u0643\u0644 \u0635\u062D\u064A\u062D"
+          )],
+          ok: {
+            text: "OK",
+            style: {
+              color: '#006767',
+              fontSize: deviceWidth * .04
+            }
+          }
+        });
+      }
+    }, {
+      key: "gohome",
+      value: function gohome() {
+        this.props.navigation.navigate('Home');
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var _this2 = this;
+
+        return _react3.default.createElement(
+          _reactNative.View,
+          {
+            style: styles.container,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 116
+            }
+          },
+          _react3.default.createElement(
+            _reactNative.View,
+            {
+              style: styles.card2,
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 118
+              }
+            },
+            _react3.default.createElement(_reactNative.TextInput, {
+              style: {
+                height: deviceHight * .1,
+                borderRadius: deviceWidth * .05,
+                color: '#06bebd',
+                fontSize: deviceWidth * .04,
+                width: deviceWidth * .8,
+                marginTop: deviceWidth * .02,
+                paddingVertical: deviceWidth * .005,
+                borderColor: "gray",
+                borderWidth: 2
+              },
+              underlineColorAndroid: "transparent",
+              keyboardType: "email-address",
+              placeholder: "Email ",
+              placeholderTextColor: "#fff",
+              ref: function ref(el) {
+                _this2.email = el;
+              },
+              onChangeText: function onChangeText(email) {
+                return _this2.setState({
+                  email: email
+                });
+              },
+              value: this.state.email,
+              useNativeDriver: true,
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 123
+              }
+            }),
+            _react3.default.createElement(_reactNative.TextInput, {
+              style: {
+                height: deviceHight * .1,
+                borderRadius: deviceWidth * .05,
+                color: '#06bebd',
+                fontSize: deviceWidth * .04,
+                width: deviceWidth * .8,
+                marginTop: deviceWidth * .02,
+                paddingVertical: deviceWidth * .005,
+                borderColor: "gray",
+                borderWidth: 2
+              },
+              underlineColorAndroid: "transparent",
+              secureTextEntry: true,
+              placeholder: "Password ",
+              placeholderTextColor: "#fff",
+              ref: function ref(el) {
+                _this2.password = el;
+              },
+              onChangeText: function onChangeText(password) {
+                return _this2.setState({
+                  password: password
+                });
+              },
+              value: this.state.password,
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 136
+              }
+            }),
+            _react3.default.createElement(
+              _reactNative.TouchableOpacity,
+              {
+                activeOpacity: .9,
+                onPress: (0, _lodash.debounce)(this.SignUp, 1000, {
+                  leading: true,
+                  trailing: false
+                }),
+                style: styles.Eligibility,
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 161
+                }
+              },
+              _react3.default.createElement(
+                _reactNative.Text,
+                {
+                  style: styles.check,
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 165
+                  }
+                },
+                "SignUp"
+              )
+            ),
+            _react3.default.createElement(
+              _reactNative.TouchableOpacity,
+              {
+                activeOpacity: .9,
+                onPress: (0, _lodash.debounce)(this.gohome, 1000, {
+                  leading: true,
+                  trailing: false
+                }),
+                style: styles.Eligibility,
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 168
+                }
+              },
+              _react3.default.createElement(
+                _reactNative.Text,
+                {
+                  style: styles.check,
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 172
+                  }
+                },
+                "\u0627\u0644\u0631\u0626\u064A\u0633\u064A\u0629"
+              )
+            )
+          ),
+          _react3.default.createElement(_reactNativePopup2.default, {
+            ref: function ref(popup) {
+              return _this2.popup = popup;
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 182
+            }
+          })
+        );
+      }
+    }]);
+
+    return Splash;
+  }(_react2.Component), _class.navigationOptions = {
+    title: 'Welcome',
+    header: null
+  }, _temp));
+
+  exports.default = Splash;
+
+  var styles = _reactNative.StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#006767',
+      width: deviceWidth
+    },
+    welcome: {
+      fontSize: 20,
+      textAlign: 'center',
+      margin: 10
+    },
+    instructions: {
+      textAlign: 'center',
+      color: '#333333',
+      marginBottom: 5
+    },
+    thumbnail: {
+      width: deviceWidth,
+      height: deviceHight * .44
+    },
+    header: {
+      height: deviceHight * .1,
+      width: deviceWidth,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: "#006767",
+      flexDirection: 'row'
+    },
+    destination: {
+      color: "white",
+      fontSize: deviceWidth * .055,
+      textAlign: "center"
+    },
+    back: {
+      width: deviceWidth * .04,
+      height: deviceHight * .04
+    },
+    home: {
+      width: deviceWidth * .06,
+      height: deviceHight * .06
+    },
+    backTouch: {
+      width: deviceWidth * .2,
+      height: deviceWidth * .1,
+      justifyContent: "center",
+      position: 'absolute',
+      left: deviceWidth * .05
+    },
+    homeTouch: {
+      width: deviceWidth * .2,
+      position: 'absolute',
+      left: deviceWidth * .9
+    },
+    send: {
+      width: deviceWidth * .9,
+      height: deviceHight * .07,
+      backgroundColor: "#06bebd",
+      justifyContent: 'center',
+      alignItems: 'center',
+      borderRadius: deviceWidth * .5,
+      marginTop: deviceWidth * .02
+    },
+    sendText: {
+      textAlign: "center",
+      fontSize: deviceWidth * .055,
+      color: "white"
+    },
+    card1: {},
+    card2: {
+      width: deviceWidth,
+      alignItems: 'center'
+    },
+    input: {
+      marginTop: 4,
+      borderRadius: deviceWidth * .5,
+      borderWidth: 1,
+      borderColor: "#a7a7a7"
+    },
+    countryFromTextInput: {
+      width: deviceWidth * .9,
+      height: deviceHight * .08,
+      borderRadius: deviceWidth * .2,
+      borderWidth: 2,
+      borderColor: "gray",
+      marginTop: deviceWidth * .02,
+      backgroundColor: '#f9f5ed',
+      fontSize: deviceWidth * .04,
+      color: '#91627b'
+    },
+    message: {
+      width: deviceWidth * .9,
+      height: deviceHight * .15,
+      marginTop: deviceWidth * .02,
+      borderRadius: deviceWidth * .05,
+      borderColor: "gray",
+      borderWidth: 2,
+      fontSize: deviceWidth * .04,
+      backgroundColor: '#f9f5ed',
+      color: '#91627b'
+    },
+    Eligibility: {
+      width: deviceWidth,
+      height: deviceHight * .1,
+      backgroundColor: "#06bebd",
+      justifyContent: 'center',
+      alignItems: 'center',
+      position: "absolute",
+      bottom: 0
+    },
+    check: {
+      fontSize: deviceWidth * .055,
+      color: "white"
+    },
+    description: {
+      fontSize: deviceWidth * .035,
+      color: "black"
+    },
+    descriptionArabic: {
+      fontSize: deviceWidth * .035,
+      color: "black",
+      textAlign: "right"
+    },
+    scroll: {
+      flex: 1
+    },
+    Keyboard: {},
+    Eligibility: {
+      width: deviceWidth * .9,
+      height: deviceHight * .1,
+      borderRadius: deviceWidth,
+      backgroundColor: "white",
+      justifyContent: 'center',
+      alignItems: 'center',
+      marginTop: deviceWidth * .1
+    },
+    check: {
+      fontSize: 30,
+      color: "#06bebd"
+    }
+  });
+},590,[12,22,176,487,585,580],"Zamlek/screens/SignUp.js");
 require(186);
-require(595);
+require(11);
 //# sourceMappingURL=http://localhost:8081/index.android.map?platform=android

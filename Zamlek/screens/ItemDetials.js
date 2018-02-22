@@ -47,7 +47,7 @@ header: null
  }
  gohome()
  {
-
+    this.props.navigation.navigate('Home')
  }
 
     render() {

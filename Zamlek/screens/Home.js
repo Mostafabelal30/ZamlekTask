@@ -144,6 +144,7 @@ header: null
      gohome()
      {
       // this.props.navigation.navigate('ChooseCountries',{lang:this.state.lang})
+      this.props.navigation.navigate('Home')
      }
 
   render() {
