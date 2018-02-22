@@ -6,7 +6,6 @@
 
 import React, { Component } from 'react';
 import {
-  Platform,
   StyleSheet,
   Text,
   ListView,
@@ -15,7 +14,6 @@ import {
   TouchableHighlight,
   TouchableOpacity,
   ScrollView,
-  AsyncStorage,
   Dimensions
 } from 'react-native';
 
@@ -75,7 +73,18 @@ header: null
     return true;
  }
 
-
+ rendersold()
+ {
+     return(
+         <View style={{alignItems:"flex-start",width:deviceWidth*.44}}>
+        <Image
+        style={styles.soldimage}
+        resizeMode='contain'
+        //source={{uri: "images"}}
+    source={{uri: 'sold'}}/>
+    </View>
+     )
+ }
 
  renderBook(book) {
     const start=book.start_date*1000;
@@ -103,12 +112,15 @@ header: null
                   <Text style={styles.redText}>تاريخ الانتهاء</Text>
                   </View>
              <View style={styles.viewContainer}>
+             {book.sold==="true"?this.rendersold():null}
+
                  <Text style={styles.viewNumber}>{book.views} </Text>
                  <Image
                style={styles.viewimage}
                resizeMode='contain'
                //source={{uri: "images"}}
            source={{uri: 'view'}}/>
+
         </View>
              </View>
                <Image
@@ -145,7 +157,7 @@ header: null
 <Image  source={{uri: 'backicn'}} resizeMode='contain' style={styles.back} />
 </TouchableOpacity>
 
-  {/* <Text style={styles.destination}>{this.props.navigation.state.params.country==="canada"?this.state.dataObject.FAQs+" - "+this.state.dataObject.Canada:this.state.dataObject.FAQs+" - "+this.state.dataObject.Australia }</Text> */}
+  <Text style={styles.destination}>الرئيسية</Text>
   <TouchableOpacity activeOpacity={.9} onPress={debounce(this.gohome, 1000, {
   leading: true,
   trailing: false
@@ -254,6 +266,11 @@ flex:1
         height: deviceHight*.025,
         alignSelf:'stretch'
     },
+    soldimage:
+    {
+        width: deviceWidth*.12,
+        height: deviceHight*.06,
+    },
     rightContainer: {
         flex: 1,
         justifyContent: 'center',
@@ -288,55 +305,6 @@ flex:1
        height: deviceHight*.002,
        backgroundColor: '#dddddd'
    },
-   top:
-   {
-    flex: 1,
-    backgroundColor: '#ffffff',
-    padding:10,
-    paddingTop:70
-   },
-
- bigContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-    //paddingTop:20,
-  },
-  welcome: {
-    width:deviceWidth,
-    height:50,
-     backgroundColor:'#FF5B1B',
-    position: 'absolute',
-    zIndex: 10,
-    top: 0,
-    left:0,
-  },
-  image:
-  {
-     position: 'absolute',
-    zIndex: 10,
-    top: 0,
-    right:20,
-    padding: 10,
-  },
-     scroll:
-  {
-   flex:1,
-    top: 20,
-    paddingTop:50,    
-},
-navTitle:
-{
-    width:deviceWidth*.4,
-    position: 'absolute',
-    zIndex: 10,
-    top: 10,
-    right:deviceWidth*.3,
-    fontSize:20,
-    color:'#ffffff',
-    textAlign:'center'
-},
   add_date:
     {
           flex: 1,

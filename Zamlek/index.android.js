@@ -29,9 +29,12 @@ import Splash from './screens/Splash';
 //  import Preparations from './screens/preparations';
 export const Stack=StackNavigator({
   AddItem:{screen:AddItem},
- Login:{screen:Login},
 
-    Splash:{screen:Splash},
+  Splash:{screen:Splash},
+ Login:{screen:Login},
+ //AddItem:{screen:AddItem},
+
+    
     Home:{screen:Home},
     ItemDetials:{screen:ItemDetials},
    // Login:{screen:Login},

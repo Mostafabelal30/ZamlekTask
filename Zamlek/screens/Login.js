@@ -25,7 +25,7 @@ import { debounce } from 'lodash';
 export default class Splash extends Component {
     constructor(props) {
         super(props); 
-       this.sendMail = this.sendMail.bind(this);
+       this.Login = this.Login.bind(this);
        this.gohome = this.gohome.bind(this);
 
 this.state={
@@ -63,7 +63,7 @@ header: null
   });
  }
 
- sendMail()
+ Login()
  {
    if(this.state.email!=="belalmostafa1993@gmail.com"||this.state.password!=="123456")
    {
@@ -74,7 +74,7 @@ header: null
 
       //alert(responseData)
   
-      this.props.navigation.navigate('Home')
+      this.props.navigation.navigate('AddItem')
   
     
    }
@@ -98,6 +98,8 @@ header: null
             style={{height:deviceHight*.1,borderRadius:deviceWidth*.05,  color: '#06bebd',fontSize:deviceWidth*.04, width:deviceWidth*.8, marginTop:deviceWidth*.02 ,paddingVertical:deviceWidth*.005 ,borderColor:"gray",borderWidth:2}}
             underlineColorAndroid="transparent"
             keyboardType="email-address"
+            placeholder="Email "
+            placeholderTextColor="#fff" 
             ref= {(el) => { this.email = el; }}
             onChangeText={(email) => this.setState({email})}
             
@@ -109,6 +111,8 @@ header: null
             style={{height:deviceHight*.1,borderRadius:deviceWidth*.05, color: '#06bebd',fontSize:deviceWidth*.04,width:deviceWidth*.8, marginTop:deviceWidth*.02 ,paddingVertical:deviceWidth*.005,borderColor:"gray",borderWidth:2}}
             underlineColorAndroid="transparent" 
             secureTextEntry={true}
+            placeholder="Password "
+            placeholderTextColor="#fff" 
             ref= {(el) => { this.password = el; }}
      onChangeText={(password) => this.setState({password})}
      
@@ -128,18 +132,18 @@ header: null
      
      value={this.state.message}
      /> */}
-    <TouchableOpacity activeOpacity={.9} onPress={debounce(this.sendMail, 1000, {
+    <TouchableOpacity activeOpacity={.9} onPress={debounce(this.Login, 1000, {
         leading: true,
         trailing: false
       })}  style={styles.Eligibility}>
-        <Text style={styles.check}>Login</Text>
+        <Text style={styles.check}>دخول</Text>
      </TouchableOpacity>
 
        <TouchableOpacity activeOpacity={.9} onPress={debounce(this.gohome, 1000, {
         leading: true,
         trailing: false
       })}  style={styles.Eligibility}>
-        <Text style={styles.check}>Home</Text>
+        <Text style={styles.check}>الرئيسية</Text>
      </TouchableOpacity>
 
 

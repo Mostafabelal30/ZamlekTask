@@ -12,8 +12,10 @@
     "react-moment": "^0.7.0",
     "react-native": "0.53.2",
     "react-native-communications": "^2.2.1",
+    "react-native-image-crop-picker": "^0.19.3",
     "react-native-indicator": "^0.7.0",
     "react-native-popup": "^0.6.1",
+    "react-native-video": "^2.0.0",
     "react-navigation": "^1.0.3"
   },
   "devDependencies": {

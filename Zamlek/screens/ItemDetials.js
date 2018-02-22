@@ -197,16 +197,6 @@ const styles = StyleSheet.create({
     container:{
         flex:1
             },
-            containerasd:{
-                    flex: 1,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    backgroundColor: '#ffffff',
-                    flexDirection: 'row',
-                    paddingTop: 10,
-                    padding:10
-                  },
-            
         
             header:
             {
@@ -262,26 +252,8 @@ const styles = StyleSheet.create({
     width: deviceWidth,
     height: deviceWidth*.5,
   },
-  image_view:
-  {
-    //marginTop:30
-  },
-  container:
-  {
-    flex: 1,
-    backgroundColor: '#ffffff',
-  },
-  navTitle:
-{
-    // width:deviceWidth*.4,
-    // position: 'absolute',
-    // zIndex: 10,
-    // top: 10,
-    // right:deviceWidth*.3,
-    fontSize:20,
-    color:'#ffffff',
-    textAlign:'center',
-},
+ 
+ 
  description: {
         fontSize:deviceWidth*.04,
         color: '#656565'

@@ -13,7 +13,7 @@ import { StackNavigator } from 'react-navigation';
 import Splash from './screens/Splash';
   import ItemDetials from './screens/ItemDetials';
  import Login from './screens/Login';
-//  import Result from './screens/result';
+  import AddItem from './screens/AddItem';
 //  import Contact from './screens/contact';
 //  import VisaView from './screens/VisaView';
 //  import Tabs from './screens/Tabs';
@@ -28,7 +28,7 @@ import Splash from './screens/Splash';
  
 //  import Preparations from './screens/preparations';
 export const Stack=StackNavigator({
- // Contact:{screen:Contact},
+  AddItem:{screen:AddItem},
  Login:{screen:Login},
 
     Splash:{screen:Splash},
@@ -45,6 +45,8 @@ export const Stack=StackNavigator({
     // FaqsAnswer:{screen:FaqsAnswer},
     // Thanks:{screen:Thanks},
     // Jobs:{screen:Jobs},
+
+
     // Tabs:{screen:Tabs},
     })
     export default class Zamlek extends Component {
@@ -56,10 +58,5 @@ export const Stack=StackNavigator({
           );
         }
       }
-
-
-
-
-
 
 AppRegistry.registerComponent('Zamlek', () => Zamlek);

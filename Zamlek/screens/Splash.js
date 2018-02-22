@@ -32,7 +32,7 @@ header: null
       //const { navigate } = props.navigation;
       const { navigate } = this.props.navigation;
 
-        setTimeout (() => navigate('Home'), 2000); 
+        setTimeout (() => navigate('Login'), 2000); 
     }
     render () {
         return (
